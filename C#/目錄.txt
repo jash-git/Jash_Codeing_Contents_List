@@ -1,0 +1,166 @@
+01_complete:秀訊息框
+02_C_Sharp08to05:2008轉2005的範例
+03_test_C_Sharp:
+	complete:秀訊息框
+	Jash_Liao_Write:自訂數學類別和GPS字串類別庫
+	ShowGpsData:呼叫類別庫
+	test_C_Sharp:數字和字串轉換
+	test_Usa_Timer:使用計時器
+04_WMI
+05_testComboxUse:使用Combox
+06_C# 剪貼簿測試
+07_MySQL:連接MySQL
+08_test_Draw:畫筆/畫圖
+09_C#操作xml檔入門
+10_test_ToolTip:顯示功能提示字串
+11_Application_Exit:控式程式本身結束
+12_動態陣列
+13_File_ReadLine:一行一行讀取檔案，並且拆解字串
+14_ArrayList:13_File_ReadLine+ArrayList應用
+15_讀取檔案轉存XML:14_ArrayList+XML寫入
+16_testDataTimePicker:DataTimePicker物件初始化沒有值
+17_Drag AND Drop(拖拉功能)
+18_test_TabControl
+19_版本相關設定
+20_ListBox有左右和上下的捲軸
+21_chtvInfoData
+23_Show_form:
+	01_標準型(兩種秀新表單的方法，表單互傳資料)
+	02_模擬精靈切換頁面
+24_C#中左鍵彈出功能表功能的實現
+25_TabControl標題改顏色
+26_VBCheckSum
+27_TabControl_ICON:TabControl上的標籤加圖片
+28_單純可定義大小無框瀏覽器
+29_C#_可帶參數的視窗程式
+30_防堵使用者在Web使用右鍵
+31_系統圖示
+32_SmartDevice_DC------------->在PDA上繪圖與顯示兩個表單
+33_ASP_NET
+34_WMI 的一個實現
+35_IEShell
+36_C#-Delete IE Cookie
+37_Utf8toUnicode
+38_Http post
+40_C#_XML_XmlDocument
+	01_CS_ReadXML(單純讀取XML設定檔，並用MESSAGEBOX顯示)
+	02_CS_ReadXML(將XML值寫入檔案中)
+	03_CS_ReadXML(IP正確性判斷，字串轉時間，時間間隔天數計算)
+41_CSEventPlugin
+42_IP_Rang_Test(SplitIPRange(SplitIPRange，SplitIP，CompareIP)
+43_Thread
+043_寫紀錄檔
+044_String_Substring
+045_String_Cut(找出某個字元在字串中的位置，並擷取該字元後的字串內容)
+046_WMVTimeInfo(WMV片長偵測)
+047_testTimer(使用System.Timers實現Timer功能)
+048_testThread(Thread形式Timer)
+049_Sleep(Thread形式的Sleep)
+050_ThreadClass(利用class方式實現Thread與主程式之間變數傳遞)
+051_ThreadCallBack(Thread執行主程序的函數)
+052_testPing(透過Ping判斷主機是否活著)
+053_CS_String_Equals(字串轉小寫+字串比對函數)
+054_WPF專業編成指南
+055_ZigbeeUIv3InitFlow
+056_C# 二進位讀寫程式(二進位檔案讀寫_複製)
+057_C#字元讀檔_進制轉換
+058_CS_FTP_upload
+059_C#_Win7 音量
+060_noc_h_SendSMS
+061_字串比對，模擬網路遮罩判斷
+062_CSharp_substring_Equals (字串轉小寫 字串比較 字串截取一部分作比較)
+063_C#_Motion JPEG Streaming Server
+064_serialport(RS232)
+065_C# class static variable
+066_C# namespace應用
+067_C# 參數傳遞相關知識
+068_C#實做讀取密碼（password）功能
+069_C# 動態產生按鈕
+070_C# 啟動外部程式
+071_CS_Json_Console
+072_CS_Show_Regedit_Console(登錄資料庫)
+073_CS_show_syspath_Console(秀系統預設路徑)
+074_下載檔案
+	CS_Download_ShowInfo_Form
+	GetUriData
+075_抓網頁原始碼
+076_系統安奘軟體列表
+077_JavaScript與C# Windows應用程序交互相關資料
+078_Search_Console(目路與檔案分別遞迴搜尋)
+079_USB下載總覽_我的收藏
+080_C#屬性實現
+081_C# 開發 dll給C# 使用
+082_C# 委派 事件
+083_[C#] (範例) 自製 Gmail, Live, Yahoo等 寄信系統(Send Email)
+084_C#_YouTub下載和get_video_info原裡
+085_在璽瑞上班時的開發備份
+	01
+		包含技術:
+		->01.C#字串處理(substring、模擬分析指定列印字串、字串反轉、字串切割、字串轉整數)->部落格
+		->02.C# 進位(進制)轉換『十進位轉二進位、二進位轉十進位、十進位轉十六進位、十六進位轉十進位』->部落格
+		->03.VC DLL封裝
+		->04.C# 呼叫DLL
+		->05.C#字串陣列DLL傳遞
+		->06.C#指標傳遞給DLL動態配置記憶體
+		->07.C#和DLL互相傳遞struct交換資料
+		->08.抓取目前時間轉字串(CS_Console_getTime)
+		->09.JSON讀寫(CS_Console_Json)
+		->10.XML讀寫(CS_Console_XML)
+	SYWEB-V8-Workstation(Delta)-(20170505)
+086_使用 Visual C# 撰寫元件
+087_使用 Visual C# 撰寫複合控制項
+089_C#建立DLL並且動態載入和動態卸載
+089_PID Control
+090_C#_出口燈專案(許耿禎老師)
+	TCP/IP(交握通訊)
+091_C# 將中文字轉換成unicode格式_unicode格式轉換中文字[應用在中文寫入_讀取 SQLITE]
+092_C# Dockpanel(分割視窗)
+093_C# JSON函式庫
+094_C#和PHP交握溝通
+095_實作非同步模式的 TCP 用戶端
+096_C# treeView實作 階層複選(checkbox)紀錄_還原和改變顏色等功能
+097_C#_HTTPTool(使用SOCKET存取HTTP/HTTPS範例)
+098_C#_FTP續傳
+100_符合CS和PHP的PHP的SOAP專案	
+101_CS_open_SelfFloder[指定資料夾開啟檔案總管]	
+102_C# TCP允許多人連線SERVER和重複開啟的Client
+103_C# DLL視窗
+104_C# outlook menu_自己修改
+105_C# 標準畫面分割元件[SplitContainer ]
+106_A C# IP Address Control
+107_C# 元件拖拉(升位圖)
+108_C# PDF產生器
+109_C# WebCam
+110_C#分割視窗(DOCK)
+111_C#顯示編譯時間和版號
+112_C# 改變元件大小和偵測WIN7_WIN10放大倍率後顯示器參數變化
+113_C#多人連線Server+PHP的Client[兩種平台利用SOCKET通訊]
+114_modbus
+115_撰寫excel 巨集完整記錄(我會寫VBA了)
+116_C#繪圖按鈕
+117_自製C#模擬簡易的圓角按鈕
+118_TreeView 複選支援三種狀態
+119_Modbus TCP
+120_使用API阻止電腦休眠
+121_ANSI文字檔轉Unicode文字檔
+122_C# AES和DES 檔案加密
+123_文字檔內容搜尋替換(CS_Console_replaceTxT)
+124_程式只能執行一次(CS_Forms_OnlyOne)
+125_建立程式捷徑(CS_Forms_shortcut_net20)
+126_使用unzip解壓縮zip
+127_秀程式版本號(CS_Forms_showVer)
+128_讓C# treeView 支援多選範例
+129_C# CRC16
+130_C# AES128 SBOX+Rijndael
+999_文件
+	01
+	ASP_NET
+	C#對PostgreSQL的操作
+	VS2008製作安裝步驟圖
+	可以拿來貼文C_Sharp簡報
+	C#中的委託和事件.doc
+	C#連接ODBC資料庫.doc
+	C#_多線程
+	C#_FTP續傳
+	20100712Media-Service-plugin
+XXX_ICON收集

@@ -1,0 +1,1919 @@
+jashtest1_20131204
+
+jash_LinearLayout_DynamicButtons
+
+Android和Javascript的交互運作
+	Android_Java_javascript
+	Android_Java_javascript(jquery mobile)20150905
+
+get_DisplayMetrics			程式全螢幕化/顯示畫面大小/使用xml內的元件
+
+Absoluted_4Button_full			不用xml/元件動態調整大小/使用絕對位置佈局
+
+Intent_Activity				利用Intent讓Activity(UI)切換
+
+Activity_KeyEvent			鍵盤/滑鼠事件
+
+Button_Hide_Show			元件隱藏/顯示
+
+Abs_Abs_Layout				兩個絕對佈局元件/佈局元件隱藏與顯示/佈局上元件隱藏與顯示
+
+Abs_2_VideoView				透過兩個按鈕配合絕對佈局元件操控VideoView大小與位置
+
+FrameLayout_4Button_full		利用FrameLayout取代絕對佈局/實現Absoluted_4Button_full+按鈕點擊事件
+
+FrameLayout_2_VideoView			Abs_2_VideoView把絕對佈局換成FrameLayout/並且可以改變VideoView的位置和改變VideoView所在Layout的位置
+
+PopupWindow_test			PopupWindow簡易範例(網路範例 用抄的)
+
+ImageView_Click_KeyEvent		利用FrameLayout+ImageView+鍵盤 實現駐點移動效果
+
+FrameLayout_PopupWindow_Talking		利用FrameLayout+PopupWindow 實作兩個介面可以互相修修改狀態範例
+
+FrameLayout_Player			全螢幕具快慢轉PLAYER
+
+FrameLayout_AlertDialog_EditText	利用AlertDialog 接收使用者輸入資料
+
+FrameLayout_TextView_MARQUEE		利用TextView實作橫向跑馬燈
+
+FrameLayout_ParseJSON			JAVA的JSON相關操作
+
+FrameLayout_Http_Download		利用java的httpclicent+httpget+thread 讓程式可以執行下載(否則gui無法等待網路),利用Handler實做可以設定gui的timer,利用HttpResponse.getEntity().getContentLength();取得網路檔案大小,利用Toast.makeText顯示及時提示訊息
+
+FrameLayout_Http_GetSessions		利用java的httpclicent+httpget+thread 讓程式可以執行Sessions和下次使用Sessions
+
+Android_Java_javascript			APP和webview內的javascript交握通訊
+
+FrameLayout_1Text_1Button		利用xml設定方式來改變按鈕外觀
+
+ListViewSDImage				動態增加ListView的項目並從sd載入圖片並在ListView顯示(需要XML配置檔)
+
+Listview圖+字(無XML)範例
+利用按鈕改變ListView顯示內容		直接重新指定ListView的ArrayAdapter並呼叫invalidate()
+
+JAVA_替換_檔案內容
+
+如何使用ProgressDialog製作標準的等待畫面
+
+Android_PROXY類別[林昌民給的實測可用5.0的手機]
+
+Android_onlyWebView
+	標準WebView範例[WebSettings、 WebChromeClient、WebViewClient、修改UA]
+	
+SEO_APP_project
+
+android webview youtube url
+
+android ruler(尺)
+
+Android JAR製作
+
+Android標準Timer和標準LOGFile的MVC架構寫法
+	Timer(透過m_intID來分辨哪個UI並執行對應TIMER，不但可把所有控制寫在一起但UI又可獨立工作不互相干擾)MVC-->C
+	LOGFile(具有時間序的標準記錄方式)MVC-->M
+	
+GOOGLE查Android gridview 點擊 顏色
+
+自己撰寫GridView(圖片+文字)範例
+	01使用內部資源檔
+	02將內部資源檔拷貝到SD卡再用檔案讀取方式載入
+	參考資料(如何使用GridView的完整用法介紹)
+	
+Android AlertDialog對話盒捕獲(阻擋)返回鍵
+
+Android AlertDialog對話盒畫面自行設計
+
+單純兩個按鈕在同一畫面切換Fragment碎片範例
+
+自己撰寫Fragment(碎片)範例
+	Fragment_TabActivity(使用參考資料01的02做出)
+	參考資料
+		01
+		02(有教如何自定Tab)
+How to connect Android with PHP
+
+不要顯示視窗標題（title）_XML方法
+
+程式將字串轉色碼並改變元件背景顏色
+
+Android開機自動啟動的service
+
+Android保證service不被殺掉(google android service 重新啟動)
+
+Android讀取刪除簡訊內容
+
+Android透過Linux ping來確定網路是否可正常運作(Android執行不用ROOT情況下的Linux command)
+
+Android接收輸入訊息對話盒
+
+SQLite從資源檔2SD卡之後在利用程式查詢寫到檔案中
+	sqlite_test
+	sqlite_test(修正中文亂碼)
+	
+Android用OTG(RS232)通訊(目前在紅米測試只能傳送)
+
+Android硬體IO(Arduino)
+
+Android_GPS_test(自己開發 http://jashliao.pixnet.net/blog/post/202073713)
+
+Android--Activity的啟動模式(防止重覆執行)
+
+Android WIFI控制(開啟、關閉)
+
+Android螢幕解鎖&點亮螢幕(來電效果)
+	Android_Keyguard_WakeLock(ps. KeyguardManager有可以判斷螢幕是否解鎖的函數)
+	
+My5TV_project
+	01.原始專案+public void InitGUI()函數(但未使用)
+	02.原始專案+public void InitGUI()函數(使用)，所以畫面變成全螢幕白白一片
+	03.在void InitGUI()函數中新增一個TextView TextView01用來顯示系統目錄路徑，新增一個void getSDPath()函數用來抓取系統路徑，並利用TextView01.append()指令依序一行一行顯示到畫面上
+	04.新增一個void getSDPath()函數用來建立程式My5TV.log檔案目錄，新增一個void isDir(String Dir)函數用來判斷上一次的My5TV.log是否存在，若存在則先刪除
+	05.新增一個void WriteLog(String text)函數用來建立Log內容
+	06.新增一個long GCDfun(long a,long b)函數用來求最大公因數，新增一個void Calculate()函數用來計算圖形顯示縮放比例，修改getSDPath()函數將相關資訊寫到Log中
+	07.將layout背景顏色設為黑色，並將TextView TextView01移除
+	08.匯入底圖(圖片檔名一率小寫)新增一個SetGUI()和SetImageView()函數用來建立GUI
+	09.匯入首頁所有圖片(圖片檔名一率小寫且不可有底線)，修改SetGUI()繪出首頁畫面下8個icon
+	10.修改SetGUI()繪出首頁畫面的右側10個按鈕
+	11.修改SetGUI()繪出首頁畫面的右側12個按鈕+5TV圖下的2個按鈕
+	12.修改SetGUI()繪出首頁畫面的右側10個按鈕+5TV圖下的2個按鈕
+	13.新增onTouchEvent(MotionEvent event),onKeyMultiple(int keyCode, int repeatCount, KeyEvent event),onKeyUp(int keyCode,KeyEvent event),onKeyDown(int keyCode,KeyEvent event)等事件回應函數和一個顯示Toast的ShowMessage(String str)函數
+	14.新增class ItemData用來儲存每個按鈕資訊，並新增一個void Init_ItemData()來實做 ItemData [] m_ID
+	15.把class ItemData獨立成一個檔案
+	16.在上下鍵實現黃框動作(模擬)+修正動態物件無法正常使用原因
+	17.在上下鍵實作『元件隱藏與改變位置』實現黃框動作(模擬)
+	18.把SetGUI()改名為SetiInitGUI()，另外新增一個ChangeFocus(int move)的函數利用m_ID陣列資料配合m_intNOWFocus資料來計算畫面改變狀態功能，最後修改onKeyUp(int keyCode,KeyEvent event)來實現選項移動效果
+	19.修改ChangeFocus(int move)新增可以控制icon1~8在獲得駐點時圖示會大小變化
+	20.將程式沒用的注解刪除
+	21.找出按下enter鍵會造成程式錯誤原因，並修正(原本程式在其他按鍵時，都未指定陣列旗標，又因為預設為-1，由於-1的陣列值不存在，導致程式發生錯誤)
+	22.新增void getAllApps()函數用紀錄自行安裝軟體資訊到log中
+	23.新增void RunApp(String PackageName)函數並透過enter鍵來實現呼叫外部apk實驗測試
+	24.新增void CloseAlertDialog()並透過onKeyUp增加呼叫該函數達到詢問是否關閉該程式的提示功能
+	25.修改ChangeFocus(int move)讓黃框再相簿時可以正常
+	26.實作出下載檔案功能並寫可以在onCreate中執行
+	27.實現OttJson2Object 類別並實作了json讀檔和json分析
+	28.可以單純下載Ott圖檔
+	29.GUI會等到Ott圖檔下載完成才顯示
+	30.GUI會等到Ott圖檔下載完成才顯示而且會在下載之前判斷該軟體是有安裝在系統上
+	31.新增實現鍵盤判斷長按和短按的區別功能
+	32.新增所有元件的id(方便日後事件撰寫可用switch-case模式來設定),實作出非box版(實際點選元件)的事件(單點和長按)回應功能
+	33.將icon1~8的m_ID[m_intNOWFocus].m_StrPackageName設定好，並在對應的事件反應區(onKeyUp+ImageViewListener)撰寫呼叫對應apk
+	34.修改SetInitGUI()在最後增加設定PopupWindow變數初始化工作(目前還沒全部完成)
+	35.修改SetInitGUI()在最後增加設定PopupWindow變數初始化工作，修改ChangeFocus+onKeyUp為了實作PopupWindow顯示
+	36.鍵盤功能完全ok，觸碰事件還未和鍵盤同步，另外記憶功能還未實作(TextView字型顏色/大小/置中設定，ListView選擇效果)
+	37.新增public void WriteAppInfoData()用來紀錄9~18按鈕的選擇狀態到檔案之中
+	38.新增public void ReadAppInfoData()用來讀取9~18按鈕的選擇狀態資料
+	39.加上通過認證的模組並測試可用
+	40.加上SelectAlbumLib.jar實作相簿功能ok
+	41.把回寫DB功能移動到一個單獨的執行緒執行
+	42.在DB執行緒加上sleep功能
+	43.新增public void WaitInit()實作開機等待動畫
+
+殘聯workspace20140702(內的My5TV實現元件的焦點控制觀念和事件回應驅切換)
+
+A5TVPV55-channel(nownews_VPN_clear)20140805
+
+Android顯示系統時間	(FrameLayout+TextView+Timer顯示系統時間[另一重點把Timer移到非GUI的類別中+在非GUI的類別中改變GUI狀態])
+	01.主頁變數+畫面相關變數與函數+Timer相關變數與函數
+	02.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+畫面相關變數與函數
+	03.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(抓Cookie和傳送Cookie兩種)+畫面相關變數與函數
+	04.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+畫面相關變數與函數
+	05.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+畫面相關變數與函數
+	06.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+畫面相關變數與函數
+	07.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+畫面相關變數與函數
+	08.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+onDestroy函數防堵GUI都已結束但是Timer還在執行+畫面相關變數與函數
+	09.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+onDestroy函數防堵GUI都已結束但是Timer還在執行+畫面相關變數與函數+計算本APP的CPU使用率
+	10.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+onDestroy函數防堵GUI都已結束但是Timer還在執行+畫面相關變數與函數+計算本APP的CPU使用率+利用執行Linux (指令)shell來抓取CPU使用率
+	11.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+onDestroy函數防堵GUI都已結束但是Timer還在執行+畫面相關變數與函數+計算本APP的CPU使用率+利用執行Linux (指令)shell來抓取CPU使用率+呼叫系統設定UI
+	12.主頁變數+取得系統上安裝APK清單+寫文字檔Log+Http DownLoad+Read JSON+HttpPostConnect(設定TimeOut+抓Cookie和傳送Cookie兩種)+等帶動畫功能+紀錄自己存活時間+刪除所有背景程式+自訂Toast顯示模式+onDestroy函數防堵GUI都已結束但是Timer還在執行+畫面相關變數與函數+計算本APP的CPU使用率+利用執行Linux (指令)shell來抓取CPU使用率+呼叫系統設定UI+判斷網路正常與否+網路總流量抓取
+
+SAOLauncher_project
+	01.實作到文件的第三步
+SharedPreferences_test(將APP變數利用XML格式產生暫存檔和清空APP的所有暫存檔)
+
+五種Toast效果-可以讓提示訊息插入圖片和自訂大小位置(裡面有執行結果圖)
+
+jianghuiquan-從零開始學Android
+	目錄:
+	001.-廢話(http://blog.csdn.net/jianghuiquan/article/details/8225504)
+	002.-ADT就可以了(http://blog.csdn.net/jianghuiquan/article/details/8227486)
+	003.-Hello,world(http://blog.csdn.net/jianghuiquan/article/details/8232253)
+	004.-上架打包(http://blog.csdn.net/jianghuiquan/article/details/8240377)
+	005.-專案架構介紹(http://blog.csdn.net/jianghuiquan/article/details/8244374)
+	006.-EditText & Button介紹(http://blog.csdn.net/jianghuiquan/article/details/8252430)
+	007.-RadioGroup & CheckBox介紹(http://blog.csdn.net/jianghuiquan/article/details/8252525)
+	008.-下拉Spinner(http://blog.csdn.net/jianghuiquan/article/details/8252537)
+	009.-ImageButton(http://blog.csdn.net/jianghuiquan/article/details/8252548)
+		-設置android:padding="0dp"，按鈕灰色邊框去掉。
+		-設置android:src="@drawable/名稱"，圖片資源。
+	010.-ImageView(http://blog.csdn.net/jianghuiquan/article/details/8252554)
+		-ImageView.setImageResource(R.drawable.名稱);//程式載入資源檔圖片
+	011.-DatePicker & TimePicker(http://blog.csdn.net/jianghuiquan/article/details/8294126)
+		-getYear()、getMonth()、getDayOfMonth()方法獲取年、月、日。
+		-getCurrentHour()、getCurrentMinute()方法獲取時、分。
+	012.-佈局Layouts之LinearLayout線性佈局(http://blog.csdn.net/jianghuiquan/article/details/8295714)
+	013.-RelativeLayout(http://blog.csdn.net/jianghuiquan/article/details/8298687)
+	014.-FrameLayout(http://blog.csdn.net/jianghuiquan/article/details/8299961)
+	015.-TableLayout(http://blog.csdn.net/jianghuiquan/article/details/8299970)
+		-重點在指定有幾列，行的部分可以不規則
+	016.-GridLayout(http://blog.csdn.net/jianghuiquan/article/details/8299973)
+		-android:rowCount="5"  
+		-android:columnCount="4"
+		-Button有android:layout_columnSpan="2" 和 android:layout_columnSpan="3"
+	018.-按鈕事件(http://blog.csdn.net/jianghuiquan/article/details/8307909)
+		-btnLogin.setOnClickListener(new LoginOnClickListener());
+		-btnLogin.setOnClickListener(new OnClickListener(){
+	020.-RadioGroup & CheckBox事件OnCheckedChangeListener(http://blog.csdn.net/jianghuiquan/article/details/8333582)
+	021.-事件OnItemSelectedListener(http://blog.csdn.net/jianghuiquan/article/details/8348566)
+		-下拉式選單的值放在資源檔中
+	022.-下拉式選單連動(http://blog.csdn.net/jianghuiquan/article/details/8348575)
+		-下拉式選單的值放在二維字串陣列中
+	023.-改變焦點事件OnFocuChangeListener
+	024.-長按2秒事件OnLongClick(http://blog.csdn.net/jianghuiquan/article/details/8348680)
+		-修改桌面權限設定<uses-permission android:name="android.permission.SET_WALLPAPER"/>  
+	025.-觸控事件OnTouchListener(http://blog.csdn.net/jianghuiquan/article/details/8348695)
+	026.-鍵盤事件OnKeyListener(http://blog.csdn.net/jianghuiquan/article/details/8348731)
+		-字串函數(length、substring)
+	027.-滾動畫面(元件要超過視窗大小)ScrollView(http://blog.csdn.net/jianghuiquan/article/details/8349570)
+		-動態增加元件(但是實際上作法應該還要建立物件陣列)
+		-ScrollView要包在LAYOUT的外面
+	028.-ListView之一(http://blog.csdn.net/jianghuiquan/article/details/8349576)
+		-單純顯示文字版
+	029.-ListView之二(http://blog.csdn.net/jianghuiquan/article/details/8349587)
+		-圖加文字(ArrayAdapter)
+	030.-AlertDialog(http://blog.csdn.net/jianghuiquan/article/details/8350461)
+		-(有四個範例-純文字、文字+按鈕、單選、複選)
+	032.-日期時間選擇對話盒DatePickerDialog(http://blog.csdn.net/jianghuiquan/article/details/8350468)
+	033.-進度對話盒ProgressDialog(http://blog.csdn.net/jianghuiquan/article/details/8350472)
+	034.-拖拉元件SeekBar(http://blog.csdn.net/jianghuiquan/article/details/8350475)
+	035.-評分元件RatingBar(http://blog.csdn.net/jianghuiquan/article/details/8350476)
+	036.-提示Toast(http://blog.csdn.net/jianghuiquan/article/details/8350479)
+		-包含標準文字模式和自訂LAYOUT模式
+	037.-圖片切換ImageSwitcher&Gallery(http://blog.csdn.net/jianghuiquan/article/details/8350486)
+	038.-開關元件Switch和ToggleButton(http://blog.csdn.net/jianghuiquan/article/details/8350489)
+	039.-GridView(http://blog.csdn.net/jianghuiquan/article/details/8350498)
+	040.-數字/類比時鐘(http://blog.csdn.net/jianghuiquan/article/details/8350501)	
+	041.-計時器Chronometer(http://blog.csdn.net/jianghuiquan/article/details/8350512)
+	042.-Tabhost(頁籤UI)(http://blog.csdn.net/jianghuiquan/article/details/8350515)
+	043.-OptionsMenu(系統菜單)(http://blog.csdn.net/jianghuiquan/article/details/8350519)
+		-設定AndroidManifest.xml變成新式菜單
+	044.-ContextMenu(本文菜單)(http://blog.csdn.net/jianghuiquan/article/details/8350524)
+	045.-SubMenu(子菜單)(http://blog.csdn.net/jianghuiquan/article/details/8350525)
+	046.-SlidingDrawer(滑式抽屜)(http://blog.csdn.net/jianghuiquan/article/details/8350533)
+		-SlidingDrawer+ListView
+	047.-ZoomControls(放大鏡)(http://blog.csdn.net/jianghuiquan/article/details/8350538)
+	048.-PopupWindow(http://blog.csdn.net/jianghuiquan/article/details/8350541)
+		-自定義選單(Menu)
+		-自定義UI背景樣式(shape)
+	049.-ExpandableListView(可伸縮的ListView)(http://blog.csdn.net/jianghuiquan/article/details/8350550)
+	050.-AutoCompleteTextView(提示文字方塊)(http://blog.csdn.net/jianghuiquan/article/details/8350564)
+	051.-基本繪圖(http://blog.csdn.net/jianghuiquan/article/details/8569153)
+		-Canvas、Paint
+	052.-基本影像處理元件Bitmap(http://blog.csdn.net/jianghuiquan/article/details/8569156)	
+	053.-圖片縮放運算Matrix(http://blog.csdn.net/jianghuiquan/article/details/8569159)
+	054.-MediaPlayer播放聲音(http://blog.csdn.net/jianghuiquan/article/details/8569164)
+	055.-MediaPlayer播放影片(http://blog.csdn.net/jianghuiquan/article/details/8569175)
+		-SurfaceView
+	056.-MediaPlayer錄音(http://blog.csdn.net/jianghuiquan/article/details/8569179)
+	057.-MediaPlayer錄影(http://blog.csdn.net/jianghuiquan/article/details/8569181)
+	058.-拍照(http://blog.csdn.net/jianghuiquan/article/details/8569187)
+	059.-SharedPreferences(程式儲存資訊XML)(http://blog.csdn.net/jianghuiquan/article/details/8569226)
+	060.-檔案(文字檔)讀寫到SD卡上(http://blog.csdn.net/jianghuiquan/article/details/8569233)
+	061.-資源檔(文字檔)讀取(http://blog.csdn.net/jianghuiquan/article/details/8569235)
+	062.-XML(DOM)讀寫到SD卡上(http://blog.csdn.net/jianghuiquan/article/details/8569241)
+	063.-XML(SAX)(http://blog.csdn.net/jianghuiquan/article/details/8633499)
+	064.-XML(pull)(http://blog.csdn.net/jianghuiquan/article/details/8634418)
+	065.-JSON讀寫到SD卡上(http://blog.csdn.net/jianghuiquan/article/details/8634643)
+	066.-SQLite(新修刪查)(http://blog.csdn.net/jianghuiquan/article/details/8569252)
+	067.-ContentProvider(通訊錄)(http://blog.csdn.net/jianghuiquan/article/details/8569264)
+	068.-ContentProvider(通話記錄)(http://blog.csdn.net/jianghuiquan/article/details/8569275)
+	069.-intent呼叫activity單向傳值(http://blog.csdn.net/jianghuiquan/article/details/8569316)
+	070.-intent呼叫activity雙向傳值(http://blog.csdn.net/jianghuiquan/article/details/8640922)
+	071.-intent呼叫WEB(http://blog.csdn.net/jianghuiquan/article/details/8569317)
+		-呼叫瀏覽器不用任何權限
+	072.-intent呼叫撥號(打電話)(http://blog.csdn.net/jianghuiquan/article/details/8569320)
+		-要額外權限
+	073.-intent傳簡訊(http://blog.csdn.net/jianghuiquan/article/details/8569325)
+	075.-intent傳EMAIL(http://blog.csdn.net/jianghuiquan/article/details/8569338)
+	078.-Activity生命周期(http://blog.csdn.net/jianghuiquan/article/details/8569291)
+	080.-Handle-Message-Looper(http://blog.csdn.net/jianghuiquan/article/details/8641071)
+	081.-Handle-Message-Looper(HTTPGET)(http://blog.csdn.net/jianghuiquan/article/details/8641072)
+	082.-AsyncTask(HTTPGET)(http://blog.csdn.net/jianghuiquan/article/details/8649638)
+	083.-Service(http://blog.csdn.net/jianghuiquan/article/details/8641091)
+	084.-Service綁定(http://blog.csdn.net/jianghuiquan/article/details/8641095)
+	085.-ClipBoard_Service(剪貼簿)(http://blog.csdn.net/jianghuiquan/article/details/8641111)
+	087.-WIFI_SERVICE（WIFI控制）(http://blog.csdn.net/jianghuiquan/article/details/8641123)
+	088.-NOTIFICATION_SERVICE(工具列ICON)(http://blog.csdn.net/jianghuiquan/article/details/8641130)
+	089.-SMS(簡訊發送)(http://blog.csdn.net/jianghuiquan/article/details/8641133)
+	090.-BroadcastReceiver(電池電量)(http://blog.csdn.net/jianghuiquan/article/details/8641144)
+	091.-BroadcastReceiver(發射/接收)(http://blog.csdn.net/jianghuiquan/article/details/8641149)
+	092.-Broadcast call SERVICE(http://blog.csdn.net/jianghuiquan/article/details/8641152)
+	093.-繪圖(http://blog.csdn.net/jianghuiquan/article/details/8641174)
+	094.-圖形運算(http://blog.csdn.net/jianghuiquan/article/details/8641183)
+	095.-音量控制(http://blog.csdn.net/jianghuiquan/article/details/8641194)
+	096.-手機監聽(http://blog.csdn.net/jianghuiquan/article/details/8641200)
+	098.-WebView(http://blog.csdn.net/jianghuiquan/article/details/8641241)
+	101.-網路抓圖(http://blog.csdn.net/jianghuiquan/article/details/8641283)
+
+android程式設計實例入門(JASH改寫)
+	(02_Sample2)		LinearLayout*1+TextView*1
+	(02_Sample3)		LinearLayout*1+TextView*2
+	(03_Sample1)		LinearLayout*1+TextView*1+Button*1
+	(03_Sample2)		LinearLayout*1+Button[10]
+	(03_Sample3)		TableLayou*1+TableRow[10]+TextView[10]+Button[10]
+	(03_Sample4)		LinearLayout*1+TextView*1+Button*1+按鈕事件功能
+	(03_Sample5)		LinearLayout*1+TextView*1+Button*1+Touch事件功能
+	(03_Sample6)		LinearLayout*1+TextView*1+Button*1+Touch事件功能+在Activity上實作Touch事件
+	(03_Sample7)		LinearLayout*1+TextView*1+Button*1+Touch事件功能+在Activity上實作Touch事件+在Activity上實作KeyDown事件
+	(04_Sample01)		LinearLayout*1+TextView*3+Color物件實作TextView文字(前後景)顏色大小控制範例
+	(04_Sample02)		LinearLayout*1+TextView*3+Color物件實作TextView文字(前後景)顏色大小控制範例+TextView文字樣式控制
+	(04_Sample03)		LinearLayout*1+TextView*1+Button*1+透過Button的setEnabled函數控制Button是否可以反應事件範例
+	(04_Sample04)		LinearLayout*1+TextView*1+CheckBox*1+CheckBox反應事件
+	(04_Sample05)		LinearLayout*1+TextView*1+RadioGroup*1+RadioButton*2+RadioButton反應事件和屬性設定
+	(04_Sample06)		LinearLayout*1+TextView*1+EditText*1+EditText使用setOnKeyListener()，監聽硬體鍵盤所發出的事件，如果寫在Activity會無效。
+	(04_Sample07)		LinearLayout*1+TextView*1+ListView*1+ArrayAdapter+ListView的基本應用。
+	(04_Sample08)		LinearLayout*1+TextView*1+Spinner*1+ArrayAdapter+Spinner的基本應用。
+	(04_Sample09)		LinearLayout*1+TextView*1+GridView*1+ArrayAdapter+GridView的基本應用。
+	(04_Sample10)		LinearLayout*1+TextView*1+ListView*1+自訂ArrayAdapter+用來改變ListView顯示狀態的基本應用。
+	(04_Sample12)		TableLayout*1+TextView*1+Menu*1+選單控制
+	(04_Sample13)		LinearLayout*1+TextView*1+Button*1+AlertDialog基本使用範例
+	(04_Sample14)		LinearLayout*1+TextView*1+Button*1+AlertDialog呼叫AlertDialog基本使用範例
+	(05_Sample01)		LinearLayout*1+TextView*1+ImageView*3+BitmapFactory載入圖片到Bitmap並利用ImageView顯示使用範例
+	(05_Sample02)		LinearLayout*1+TextView*1+ImageView*1+BitmapFactory載入圖片到Bitmap並利用ImageView顯示外加Matrix來控制圖片旋轉使用範例
+	(05_Sample03)		LinearLayout*1+TextView*1+ImageView*1+RadioGroup*1+RadioButton*3+BitmapFactory載入圖片並利用ImageView顯示外加利用RadioButton和Matrix控制圖片縮放使用範例
+	(05_Sample04)		LinearLayout*1+TextView*1+ImageView*3+BitmapFactory載入圖片到Bitmap並利用ImageView顯示利用RotateAnimation控制圖片旋轉使用範例
+	(05_Sample05)		LinearLayout*1+TextView*1+ImageView*3+BitmapFactory載入圖片到Bitmap並利用ImageView顯示利用AnimationSet+ScaleAnimation控制圖片旋轉和放大使用範例
+	(05_Sample06)		LinearLayout*1+SampleView*1+建立自己的View元件，並利用onTouchEvent來實作繪圖功能，看起來會是一個球體跟著滑鼠移動。
+	(05_Sample07)		LinearLayout*1+SampleView*1+建立自己的View元件，並利用onTouchEvent觸發取亂數畫出數個圓(其中數個圓的資訊全部存在ArrayList中)。
+	(05_Sample08)		LinearLayout*1+SampleView*1+建立自己的View元件，透過ViewFlipper 視圖的切換容器視圖，並實作偵測使用者左右滑動畫面事件，並驅動切換VIEW的內容。
+	(05_Sample09)		LinearLayout*1+SampleView*1+建立自己的View元件，外加透過Activity implements Runnable配合Handler來實作定時(Timer)繪圖實現彈跳球效果。
+	(06_Sample01)		LinearLayout*1+MediaPlayer*1+Button*3，利用3個按紐來控制MediaPlayer播放資源檔內ring.mp3狀態。
+	(06_Sample02)		LinearLayout*1+MediaPlayer*1+MediaRecorder*1+Button*3，利用3個按紐來控制MediaPlayer+MediaRecorder進行錄音&播放。
+	(06_Sample05)		LinearLayout*1+EditText*1+TextToSpeech*1+Button*1，利用按紐來控制EditText+TextToSpeech來實現英文發音。
+	(07_Sample01)		LinearLayout*1+ImageView*1+SensorManager*1+Sensor*1，利用Sensor抓到的加速規訊號來控制ImageView的圖片透明度。
+	(07_Sample02)		LinearLayout*1+ImageView*1+SensorManager*1+Sensor*2，利用Sensor抓到的加速規訊號+電子羅盤(磁場)訊號來控制ImageView的圖片旋轉和移動。
+	(08_Sample01)		LinearLayout*1+Button*1，利用Intent呼叫電話。
+	(08_Sample02)		LinearLayout*1+Button*1，利用Intent呼叫SearchManager來進行搜尋，而且將要搜尋的內容利用Intent.putExtra函數傳遞過去。
+	(08_Sample03)		LinearLayout*1+Button*1+TextView*1，利用Intent呼叫RecognizerIntent來進行聲音辨識功能，而且將聲音辨識功能的結果透過onActivityResult將聲音辨識結果顯示出來。
+	(08_Sample04)		LinearLayout*1+ImageView*1+TextView*1，利用IntentFilter建立監聽系統電池電力訊息的廣播資訊，而且將電池電力轉換成對應數值改變圖片的透明度。
+	(08_Sample05)		LinearLayout*1+ListView*1，利用Cursor抓取通訊錄並顯示在ListView上。
+	(08_Sample06)		LinearLayout*1+Button*1+ImageView*1，利用Intent+ACTION_GET_CONTENT開啟圖片選擇，並顯示選擇的圖片。
+	(08_Sample07)		建立兩個Activity，利用Intent在兩個Activity互傳訊息。
+	(08_Sample08)		LinearLayout*1+Button*2，利用AlarmManager+Service實作定時觸發的功能。
+	(10_Sample01)		LinearLayout*1+Button*2+EditText*1，利用FileInputStream+BufferedReader+InputStreamReader+FileOutputStream+BufferedWrite+OutputStreamWriter實作檔案讀寫功能。
+	(10_Sample02)		LinearLayout*1+ListView*1，利用File原件實作檔案清單條列功能。
+	(10_Sample03)		LinearLayout*1+ListView*1，利用SQLiteDatabase元件實作SQLite資料庫建立/查詢/關閉功能。
+	(10_Sample04)		LinearLayout*1+ListView*1，利用SQLiteDatabase元件實作SQLite資料庫條件搜尋功能。
+	(10_Sample05)		LinearLayout*1+ListView*1，利用SQLiteDatabase元件實作SQLite資料庫字串完全相等條件搜尋功能。
+	(10_Sample06)		LinearLayout*1+ListView*1，利用SQLiteDatabase元件實作SQLite資料庫字串Like條件搜尋功能。
+	(10_Sample07)		LinearLayout*1+ListView*1，利用SQLiteDatabase元件實作SQLite資料庫字串搜尋+排序功能。
+	(11_Sample01)		TableLayout*1+Button*1+TextView[3]+EditText[3]，利用Intent.ACTION_SENDTO實作寄送郵件(Send Email)
+	(11_Sample02)		TableLayout*1+Button[4]+WebView*1，利用WebView+WebViewClient食作簡易瀏覽器。
+	(11_Sample04)		LinearLayout*1+EditText*1+Button*1+ListView*1，利用HttpClient抓取網路上XML+ XmlPullParserFactory和XmlPullParser來分析XML。
+
+廣告推播
+	Ad_Push01 			WebView+VideoView，利用VideoView自動偵測播放完畢功能達到無縫銜接影片播放功能
+
+單純利用原生Player播放頻道測試機器穩定度(有紀錄播放時間)
+
+單純利用原生Player播放頻道測試機器穩定度(有紀錄播放時間)並在畫面顯示播放器player狀態
+
+google android tcp server(TCP server和client)
+
+Android 編譯系統錯誤與解決方法(程式過大)
+
+Android send keycode(只有查相關資料未實作)
+
+socket server multiple clients Android(有範例未驗證)
+
+Android開發零點起飛(JASH改寫)
+	03_01.android textview autolink programmatically(讓textview附有超連結功能和所有textview屬性的設定函數整理)
+	03_02.android edittext password programmatically(讓edittext具有輸入密碼和顯示功能)
+	03_03.android edittext phone number  programmatically(讓edittext設定輸入資料格式和所有edittext屬性的設定函數整理)
+	03_04.android activity title programmatically(設定程式 title和activity的原廠文件網址-內有包函事件觸發流程圖)
+	03_05.android ImageButton src programmatically(設定ImageButton背景圖)
+	03_06.建立ToggleButton*1，實作偵測ToggleButton狀態+顏色和文字改變
+	04_01.建立ProgressBar*3，ProgressBar元件實作(利用LinearLayout.LayoutParams放大元件)
+	04_02.建立SeekBar*1+TextView*1，利用SeekBar元件改變TextView內容。
+	04_03.建立AutoCompleteTextView，利用AutoCompleteTextView(類似GOOGLE搜尋時的提示選項)應用。
+	04_04.建立MultiAutoCompleteTextView，利用MultiAutoCompleteTextView(類似GOOGLE搜尋時的提示選項)應用。
+	04_05.建立RatingBar，利用RatingBar轉化成浮點數來進行評分應用。
+	04_06.建立Spinner(下拉選單)，利用Spinner應用。
+	05_01.建立Menu，利用Menu的應用。
+	05_03.建立Menu，利用Menu+SubMenu的應用。
+	05_06.建立Menu+AlertDialog，利用Menu+AlertDialog的應用。
+	05_10.建立Menu+ProgressDialog，利用Menu+ProgressDialog的應用。
+	05_14.建立Menu+Notification，利用Menu+Notification的應用。
+	06_03.Activity生命週期
+	06_05.Android-單純兩個Activity切換事件觸發筆記
+	06_06.從主Activity送訊息到下一個Activity
+	07_00.Android-Service介紹
+	07_01.單純Android執行Service執行計數只能在Log看到變化
+	07_03.Activity抓取Service內的值
+
+ottstore_project
+	01.
+	02.(可以顯示系統語系)
+
+Android Intent和Bundle 傳遞資料(包含傳遞自定義物件)
+
+繪製表格
+	仿excel表格，可實現運算.rar
+	GridView繪製(寬高大小一置)表格實作
+	ListView2Table(繪製表格)
+		01.原始範例
+		02.修改每列個數，並將取畫面寬高方法修正
+		03.修改讓標題列和資料列高度不一致
+
+		實驗標準調整TextView字型大小
+
+文字檔變圖片(文字轉圖片)
+
+ImageView圓角與Layout版面佈局圓角說明及介紹
+
+利用XML配置GUI和利用程式碼設定元件背景顏色
+
+簡易抓取自己執行畫面
+
+手機在ROOT情況下連續桌面截圖(紅米測試OK)
+
+學校電子白板
+
+簡訊監聽GMAPP
+	GMApp_01(20150428)
+		01.啟動程式後每6s換ping確定網路狀況，並且抓取所有簡訊存放在文字檔中
+		02.重啟手機也會每6s抓取所有簡訊存放在文字檔中
+		03.存放路徑就在記憶卡上的GMApp資料夾中
+	GMApp_02(20150429)
+		01.在gui新增按鈕
+		02.按鈕中測試sms發送＆sms刪除＆gui隱藏
+	GMApp_03(20150430)
+		01.新增JSON2Server	
+	GMApp_04(20150501)
+		01.產生json文字檔
+	GMApp_05(20150503)
+		01.POST JSON
+		02.POST DATA
+		03.testPost()
+	GMApp_06(20150504)	
+		01.修正POST JSON，傳送時指定UTF8防止中文亂碼
+	GMApp_07(20150504)
+		01.簡訊傳給SERVER
+	GMApp_08(20050515)
+		所有基本功能整合完成
+	GMApp_09(20150517)
+		簡訊中固定多一筆假的，防止沒簡訊
+	GMApp_10(2015.05.24_02)
+		結案
+	GMApp_11(2015.05.27_01)
+		GUI縮小等10秒
+	GMApp_12(2015.06.08_01)
+		JCC寄給我要我把畫面滿版(RelativeLayout+WEBVIEW)，所以修改XML
+		
+自製佛教MP3播放器(ListenSutra)
+	ListenSutra(2015.08.12_01)_ALL
+		├版號：15081201 / 2015.08.12_01
+		├換圖/換應用程式名稱
+		├換圖/換應用程式名稱
+		├CommonModule.java
+			├通用訊息對話盒
+			├Android 把自己縮小/隱藏
+			├Android Send Key code 模擬鍵盤
+			├Android Send Touch 模擬點擊
+			├Android Send TouchMOVE 模擬滑動
+			├通用資料庫SQLite
+			├抓取APP本身版本資訊
+			├SharedPreferences的使用(APP暫存資料功能)[記錄/讀取 變數值從實體檔案]
+			├取當前語言/取當前國家
+			├Android 影像處理基礎
+			├傳入圖片並切出圓角，圓角轉換函式，帶入Bitmap圖片及圓角數值則回傳圓角圖，回傳Bitmap再置入ImageView
+			├抓取非Wifi的網卡MAC
+			├取得wifi資訊
+			├手機內系統訊息
+			├取得系統上安裝APK清單
+			├刪除背景程式
+			├利用TIMER掃描偵測特定USB設備
+			├等帶時動畫
+			├清除APP暫存
+			├刪除資料夾內檔案
+			├刪除資料夾
+			├寫文字檔
+			├建立APP 資料夾
+			├抓SD卡下特定目錄的完整路徑
+			├抓取資料下所有檔案清單(列表)-子資料不會抓取
+			├Http DownLoad
+			├Read JSON
+			├簡訊相關 SMS
+			├ping(確認網路)
+			├Http post Json to Server
+			├Http Post Data to Server
+			├關閉程式提示
+			├啟動外部程式
+			├GUI提示訊息
+			├紀錄存活時間
+			├畫面相關變數與函數（絕對配置gui）
+			├Timer相關變數與函數
+			├資源檔複製到sd卡
+			├Notification 狀態列顯示icon/ 喚回GUI
+			├自訂listview字型大小，透過layout
+			├timer內實做倒數計時關閉程式
+			├單純檔案拷貝（copyfile）
+			├儲存實體SharedPreferences的xml到sd卡上(SaveSharedPreferencesXML)
+		├MainActivity.java
+			├修正CheckBox上一次選擇到中斷後播放會失效的問題(在Button時直接讀取CheckBox狀態)
+			├SeekBar 標準操作
+			├ListView 標準操作
+			├TextView 標準操作
+			├Button 標準操作
+			├CheckBox 標準操作
+			├MediaPlayer 播放sd卡音樂檔案（mp3）標準操作
+			├螢幕旋轉不執行onCreate
+			├鍵盤偵測
+			├關閉程式標準程式實做
+			├AudioManager控制媒體播放音量-SeekBar拖拉控制
+			├透過menu選單（xml）來顯示版本資訊
+
+自製連續執行倒數計時器(單聲阿彌陀佛)
+			
+Android_Base64_ALL
+	├Base64.java
+	├MainActivity.java
+		├按鈕事件
+		├EditText取（抓）值
+		├String和byte[]互換
+		
+Android_XOR_Base64_ALL
+	├XorCoder
+		├呼叫Base64防止XOR的結果是亂碼無法顯示
+		├String和byte[]互換
+	├Base64.java
+	├MainActivity.java
+		├按鈕事件
+		├EditText取（抓）值
+		
+Android_PHP_MySQL_project(by jash)
+史上最牛173個Android項目源碼！
+	‧	源碼下載地址：http://www.ctdisk.com/file/11774106
+	‧	365MobileSecretary v1.0.6(365手機助手AIDL)
+	‧	888個經典 Logo.rar
+	‧	2012-10-1513:03   2,098,836     AdXmpp(Openfire+asmack+spark) .zip
+	‧	2012-11-09  22:44              AidlDemo(簡單aidl的例子)
+	‧	2012-07-04  15:43           104,117 aidl跨進程調用.rar
+	‧	2012-07-05  08:42            96,110 andbatdog電池監控.rar
+	‧	2012-07-04  10:24            96,122 andbatdog監視電池.rar
+	‧	2012-07-05  08:42         3,350,832 andricoFacebook用戶端.rar
+	‧	2012-10-16  08:46           627,007 Android Gamex木馬分析報告.rar
+	‧	2012-11-09  22:44              Android 英語單詞記憶程式源碼
+	‧	2012-07-05  20:04         1,149,811 AndroidPdfViewerPDF檢視器.zip
+	‧	2012-03-27  15:01         5,109,760 AndroidPlayer(仿酷狗播放機).tar
+	‧	2012-10-26  11:14         2,668,377 androidtalk_2010_11_17【Sundy系列】全看懂了-加兩年經驗-語音朗讀-語音辨識-語音.rar
+	‧	2012-07-04  10:11           679,063 Android下的加密信息用戶端 WhisperSystems-TextSecure.zip
+	‧	2012-07-05  08:23            81,525 Android與js交互.rar
+	‧	2012-07-05  08:24            38,747 Android中監聽電話狀態.rar
+	‧	2012-07-05  13:29           216,852 Android之Wifi學習教程.rar
+	‧	2012-07-05  16:52         1,021,719 Android之用PopupWindow實現彈出功能表.rar
+	‧	2012-07-05  13:29         6,213,315 android在wifi下手機與電腦的socket通信.rar
+	‧	2012-10-12  09:25            77,738 android多執行緒中斷點下載.rar
+	‧	2012-10-18  08:32           578,033 Android手機一鍵Root原理分析.zip
+	‧	2012-07-04  10:25         4,074,387 Android手機的VoIP用戶端 Sipdroid.rar
+	‧	2012-07-05  13:29             6,527 Android有未接來電後處理(判斷未接來電).rar
+	‧	2012-07-07  09:23           942,821 Android模仿樂淘的應用程式分析源碼.zip
+	‧	2012-07-04  15:00         3,166,671 Android遊戲源碼——忍者快跑.rar
+	‧	2012-07-05  08:25            37,537 Android自動發送短信.rar
+	‧	2012-07-05  13:30             8,229 Android自動開關機實現.rar
+	‧	2012-11-09  22:44             Android視頻採集+RTSP完整代碼（可用）
+	‧	2012-07-04  08:47            73,533 Android遠端登入含有loading登錄效.zip
+	‧	2012-07-04  09:12           280,540 Angle v1.0_2D遊戲引擎.ZIP
+	‧	2012-07-05  20:04         1,890,708 BOOK看遍所有UI控制項.7z
+	‧	2012-07-05  20:04           156,017 BrewClock鬧鐘.zip
+	‧	2012-11-09  22:44              BTAndroidWebViewSelection（webview選擇文字）
+	‧	2012-07-04  15:23            78,447 cellmap v2.0 基站查詢定位導航系統 .rar
+	‧	2012-07-03  08:36           561,172 DialogShow.rar
+	‧	2012-07-05  13:29            24,919 dialog去除邊框代碼.rar
+	‧	2012-11-09  22:44            DocumentViewer(PDF閱讀器)
+	‧	2012-11-09  22:44              douBanList(滾動到底部載入新的，軟緩存，懶載入）
+	‧	2012-07-04  10:06           253,952 Droid Wall 手機防火牆.zip
+	‧	2012-10-18  15:41        28,235,097 FBReader修改epub快速載入.rar
+	‧	2012-07-05  20:04           984,257 FiveChess五子棋.zip
+	‧	2012-07-05  20:04             3,546 Flashlight燈光.zip
+	‧	2012-11-09  22:44             GetSDTree(簡單SD卡文件流覽器)
+	‧	2012-07-05  20:04           847,962 hotel賓館系統.zip
+	‧	2012-07-04  08:59           190,704 ImageView 圖片迴圈跑馬燈的效果.rar
+	‧	2012-07-09  08:09         4,411,600 ipcamera-for-android 手機變成IP Camera.rar
+	‧	2012-07-09  07:58         1,531,140 jamendo-開源線上音樂.rar
+	‧	2012-07-05  08:42         4,999,890 jchat4android手機聊天程式.rar
+	‧	2012-07-03  08:56           557,260 LoginXml.rar
+	‧	2012-07-05  20:04           434,335 MineSweeper由java實現.zip
+	‧	2012-07-02  11:58            89,491 miniTwitter登錄介面.rar
+	‧	2012-11-09  22:44              MyAppWeixin(仿微信介面)
+	‧	2012-11-09  22:44              MyBrowser（簡單網頁流覽器）
+	‧	2012-10-31  09:11           599,990 Myjob3(圖片剪輯功能).rar
+	‧	2012-07-02  14:50         1,605,667 OPENG開發的示例代碼.rar
+	‧	2012-07-05  08:35           645,120 OpenSudoku一個簡單的九宮格數獨遊戲.zip
+	‧	2012-11-09  22:44              oschina-android-app（開源中國）
+	‧	2012-06-26  09:16           487,541 OssSystem（OA系統圖書管理簡單版）.rar
+	‧	2012-10-12  09:26           346,945 Phonegap+HTML5+CSS3+jQuer簡單介面範本示例及源碼.rar
+	‧	2012-07-04  15:43         1,821,251 ProgressBar 幾乎全部的用法.rar
+	‧	2012-07-03  17:35            76,553 QQ_UI之分類菜單DEMO.zip
+	‧	2012-07-02  11:44           375,661 QQ的登錄介面 原始程式碼 .zip
+	‧	2012-07-04  09:34        14,784,266 quitesleep手機電話功能軟體.rar
+	‧	2012-07-03  18:02           408,137 rokon_src_2-0-3_遊戲引擎.zip
+	‧	2012-10-15  13:17           564,446 scientific-calculator-for-android( 功能強大的科學計算器).zip
+	‧	2012-07-05  19:55           226,314 SeeJoPlayer（播放機）.7z
+	‧	2012-10-12  10:14         1,888,676 SipDroid用戶端源碼.rar
+	‧	2012-07-06  15:47         4,027,673 sipdroid語音及視頻通話.rar
+	‧	2012-07-02  11:42           194,350 tablelogin（登陸介面）.rar
+	‧	2012-07-05  20:05         1,094,175 TankWar坦克大戰.zip
+	‧	2012-11-09  22:44              telecapoland-jamendo-android-6cd07fb（國外開源音樂播放機）
+	‧	2012-07-04  10:21        10,389,478 TorProxy應用實現了Android手機無線電電傳通訊(TOR).rar
+	‧	2012-07-05  08:21           160,512 UI設計之 仿做蘑菇街UI設計 源碼.zip
+	‧	2012-07-03  17:35           336,387 ViewPager-實現左右兩個螢幕的切換.rar
+	‧	2012-07-04  08:56            51,580 VIEW雙緩衝與SurfaceView比較.zip
+	‧	2012-07-02  14:52         1,741,979 weibo4andriod-2011-01-14.zip
+	‧	2012-11-09  22:44              WordPress for Android
+	‧	2012-10-12  09:26           489,790 zirco-browser流覽器源碼.rar
+	‧	2012-07-05  08:34           489,790 Zirco-browser：超越海豚的開源流覽器.rar
+	‧	2012-07-08  14:20         1,635,959 zz-doctor中醫大夫助理資訊系統(簡化版).zip
+	‧	2012-07-05  08:42           577,740 zz-doctor中醫大夫助理資訊系統.rar
+	‧	2012-07-02  14:33            62,897 一個支持暫停下載中斷點續傳的源碼 .rar
+	‧	2012-07-02  17:50            59,418 一個登陸和註冊介面.rar
+	‧	2012-07-01  22:44            50,199 一個短信應用源碼.rar
+	‧	2012-07-03  08:19           513,471 一個簡單註冊介面.rar
+	‧	2012-07-02  17:50            57,761 一個簡單登錄的DEMO.rar
+	‧	2012-07-04  10:29           242,826 一款查詢軟體（身份證號，號碼歸屬等）原始程式碼.rar
+	‧	2012-10-12  09:29           486,737 三國殺版連連看（使用html5的canvas特性，純javascript開發）.zip
+	‧	2012-07-02  11:21           245,168 個人消費記錄軟體.zip
+	‧	2012-07-04  15:10            66,379 中文天氣預報程式.rar
+	‧	2012-07-03  17:42           121,280 五種不同的Toast效果.rar
+	‧	2012-07-05  13:29             7,525 從android中調用web service的源碼.rar
+	‧	2012-07-03  17:55            72,662 從網路上獲取圖片.rar
+	‧	2012-07-03  17:46            81,557 仿iphone 氣泡短信 DEMO.rar
+	‧	2012-07-07  09:23           848,443 仿ireader書架.zip
+	‧	2012-07-05  08:20           159,161 仿QQ微信登錄頁面.rar
+	‧	2012-11-09  22:43              仿Siri的中文語音助理源碼
+	‧	2012-07-02  14:29           267,429 仿UCWEB介面源碼.rar
+	‧	2012-07-02  11:16         2,221,174 仿優酷Android用戶端圖片左右滑動（自動滑動）.rar
+	‧	2012-07-02  12:05           989,801 仿大眾點評源碼.rar
+	‧	2012-07-04  08:46           295,456 仿新版人人的效果.zip
+	‧	2012-07-03  17:38           607,589 使用Vitamio打造自己的Android萬能播放機（1）——線上播放.zip
+	‧	2012-11-09  22:43              側邊欄滑動
+	‧	2012-10-18  08:32           238,194 擊潰360手機衛士的三大防護.rar
+	‧	2012-07-05  13:30             5,522 載入網頁進度條.rar
+	‧	2012-07-01  22:37           470,671 動畫效果 translate、scale、alpha、rotate 切換Activity動畫 控制項位置調整.zip
+	‧	2012-07-03  17:37         1,360,067 原來PATH的功能表效果如此簡單。佈局+TranslateAnimation搞定.zip
+	‧	2012-07-02  12:52           798,818 口袋微博 伺服器 用戶端代碼.rar
+	‧	2012-07-02  11:24         1,471,896 商情商靈商測試系統原始程式碼.rar
+	‧	2012-07-05  08:18            90,824 圖片陰影效果和影子效果 .rar
+	‧	2012-11-09  22:43             圓環菜單，只有你想不到的，沒有做不到的
+	‧	2012-07-05  13:30           186,497 在Android遠端上傳以及下載圖片---XFire框架.rar
+	‧	2012-07-04  10:28            59,743 基於socket通訊的檔續傳！.rar
+	‧	2012-07-07  10:51           124,449 基於股票的一個Android應用(內含源碼) .rar
+	‧	2012-07-04  15:41            56,833 多點縮放字體DEMO  .rar
+	‧	2012-07-04  08:54            82,500 多級PopupWindow的小demo.zip
+	‧	2012-07-03  17:54            63,576 天天動聽 半透明Menu效果.zip
+	‧	2012-07-03  17:43         1,252,302 奇藝高清UI介面原始程式碼.rar
+	‧	2012-10-16  08:57           341,873 安卓WIFI密碼破解工具編寫初探.rar
+	‧	2012-07-03  17:48            14,569 用戶端連接伺服器並交互實例.rar
+	‧	2012-10-12  09:28         1,124,167 小米便簽原始程式碼分享.zip
+	‧	2012-07-06  11:36           391,674 嵌套TabHost示例.zip
+	‧	2012-07-04  08:58           134,545 平臺水波效果.rar
+	‧	2012-07-03  17:40           580,887 開發 API人臉檢測實例教程.zip
+	‧	2012-07-02  17:51         1,209,589 開發之 SD卡的使用.rar
+	‧	2012-07-02  11:11           503,419 開發源碼分享之線上音樂播放機完整專案.zip
+	‧	2012-07-10  21:11         8,488,207 開源專案Jchat 編譯以及源碼分析 含開發文檔.zip
+	‧	2012-07-02  14:31           381,241 開源項目pedometer .rar
+	‧	2012-07-02  17:49            91,935 引用協力廠商庫的方法.rar
+	‧	2012-07-05  13:30               464 強行結束APP進程的方法.rar
+	‧	2012-07-02  11:23           985,795 微博用戶端原始程式碼.rar
+	‧	2012-07-05  08:30            64,948 懸浮Activity並可拖動(訪懸浮歌詞).rar
+	‧	2012-10-22  12:33         8,356,205 手機RSS閱讀器(html5).rar
+	‧	2012-07-05  08:21            50,770 抖動窗口.rar
+	‧	2012-10-16  08:45           479,295 拉響手機QQ安全警報：聊天記錄檢視器的編寫.rar
+	‧	2012-07-05  13:30            18,593 拍照上傳代碼樣例(轉).rar
+	‧	2012-07-03  17:40            25,074 拖動 Button 顯示效果.rar
+	‧	2012-07-01  22:59           619,487 指南針定位源碼.rar
+	‧	2012-07-04  09:02           411,662 換膚.zip
+	‧	2012-10-29  08:34         2,282,995 改進10-yannihui(音樂播放機).zip
+	‧	2012-07-04  08:49            87,025 鬥地主源碼實現.zip
+	‧	2012-07-02  14:49         2,840,206 新浪、騰訊、網易、搜狐微博OAuth認證整合Android版.zip
+	‧	2012-07-05  19:55         4,439,558 植物大戰僵屍（簡單版）.7z
+	‧	2012-07-04  08:56            93,592 模仿engadget菜單.zip
+	‧	2012-07-02  11:21            52,279 模仿UC等軟體啟動畫面載入時閃爍點的樣式.zip
+	‧	2012-07-02  11:15         1,838,269 模仿微信導航頁效果源碼.rar
+	‧	2012-06-27  15:28         4,290,984 畢業設計優秀論文.rar
+	‧	2012-07-05  08:17           151,273 漸入漸出動畫 無閃爍 無黑底 Demo.rar
+	‧	2012-07-05  08:29            47,598 演化理解 Android 非同步載入圖片.rar
+	‧	2012-07-02  11:20         1,892,615 用戶註冊，登錄的簡單實現.zip
+	‧	2012-07-04  15:06           486,842 百度地圖API 之 定位周邊搜索POI.zip
+	‧	2012-06-19  08:33        13,298,113 百度手機地圖 實例集合.rar
+	‧	2012-07-04  15:43           480,382 監控別人的行蹤.rar
+	‧	2012-07-05  13:29             5,418 程式如何升級.rar
+	‧	2012-07-05  13:30             4,799 程式的安裝、卸載和更新.rar
+	‧	2012-06-29  11:13           851,069 簡單的訂機票系統源碼.zip
+	‧	2012-07-03  17:48           591,803 精仿QQ設置介面.rar
+	‧	2012-10-12  10:33         5,247,096 精品生活.rar
+	‧	2012-07-05  08:28            81,525 結合html5jscss測試程式附源碼.rar
+	‧	2012-07-05  13:29           933,005 網路通信的六種方式示例代碼.rar
+	‧	2012-07-04  09:00            42,974 獲取Android系統程式資訊.rar
+	‧	2012-07-05  13:29             4,923 獲取網路資料到本地並查看.rar
+	‧	2012-07-05  13:29             4,694 語音辨識，根據語音，執行對應操作.rar
+	‧	2012-07-05  13:29             5,443 調用Android中的軟鍵盤.rar
+	‧	2012-07-03  17:47           102,908 超爽的android抽屜效果.rar
+	‧	2012-07-05  08:32            27,681 通過手勢實現的縮放處理 .rar
+	‧	2012-07-05  13:29             6,308 防止記憶體溢出淺析.rar
+	‧	2012-06-19  17:32         1,101,474 音樂播放機源碼.rar
+	‧	2012-07-09  08:08           166,714 飛行曆 飛行模式 AirPlus.rar
+	‧	2012-07-01  22:57           683,387 高仿 WIN8系統 磁貼點擊下沉傾斜效果源碼.zip
+	‧	2012-07-04  10:31           291,396 高仿基於android2.2(Froyo)的Contacts.zip
+	‧	2012-07-03  17:42         1,027,234 高仿多米音樂播放機.rar
+
+ym 的 android source code 源碼大放送(實戰開發必備)
+	├─AIDL
+	│      AIDLService,遠程調用例子。包括服務端與用戶端兩個工程檔.zip
+	│      
+	├─Dialog對話方塊
+	│      android 自定義對話方塊.rar
+	│      android-styled-dialogs 可自定義樣式的dialog.zip
+	│      Android中實現Iphone樣式的AlertDialog.zip
+	│      Android實現Windows風格的Dialog.zip
+	│      HerilyAlertDialog完全自定義的Dialog.zip
+	│      仿QQ的頭像選擇彈出的對話方塊，酷似！.zip
+	│      基本的對話方塊.rar
+	│      自定義列表選擇Dialog，適用網路請求資料.rar
+	│      自定義單選、多選對話方塊及popwindow視窗實例源碼.rar
+	│      自定義彩色Toast.rar
+	│      
+	├─dlan
+	│      dlna庫源代碼包.zip
+	│      
+	├─EditText輸入框
+	│      D-左邊圖片的文本框，當文字輸入時改變圖片，模仿微博登錄框.rar
+	│      前面部分可以編輯後面部分不可編輯的EditText.zip
+	│      自定義帶有刪除功能的edittext實例，在登錄，搜索等地方經常用到可以直接用.zip
+	│      
+	├─Emoji表情
+	│      在專案中使用Emoji表情【源代碼】.rar
+	│      
+	├─Fragment&Tab選項卡
+	│      Android ViewPager Fragment實現選項卡.rar
+	│      ExpandTabView.zip
+	│      Fragment實現TabHost效果.rar
+	│      Fragment實現tab實例 代碼.zip
+	│      SYBViewPager(自定義下劃線標題的ViewPager).zip
+	│      Tab+Viewpage+Fragment實現導航.zip
+	│      TabActivityDemo.rar
+	│      Tab控制項使用的最簡純淨Demo.zip
+	│      viewpager+Fragment.zip
+	│      ViewPager仿微信分頁導航，多Activity載入.rar
+	│      ViewPager和Tabhost結合，可滑動的tabhost.rar
+	│      仿lol應用的佈局 fragment的嵌套.zip
+	│      基於Fragment實現Tab的切換，滑出側邊欄.zip
+	│      封裝的一個tabhost框架.zip
+	│      簡單實現 一條線 跟隨 viewpager 滾動.rar
+	│      頁卡滑動， 標題跟著滑動，頁卡所在標題始終顯示在最顯眼位置.rar
+	│      頁卡滑動，標題固定位置，以標題顏色與下劃線表示當前頁卡所在位置.rar
+	│      高仿網易新聞抽屜效果+橫向菜單+頁面滑動.zip
+	│      高仿蘑菇街 主介面，fragment實現首頁tab切換.zip
+	│      
+	├─GIF
+	│      android gif模式和圖片展現模式 圖片展現神器.zip
+	│      android 經典幀動畫源碼.rar
+	│      GiF完美運行！！！！.rar
+	│      序列幀動畫,開始,結束監聽的解決.zip
+	│      
+	├─GPS定位
+	│      生活軌跡Android端.zip
+	│      
+	├─gridview相關
+	│      gridview分頁效果.zip
+	│      gridview最新版本.rar
+	│      GridView添加圖片DeleteGridView0.2.rar
+	│      Listview,Gridview空資料處理.zip
+	│      單排顯示gridview並從解析JSON讀取資料載入專案.zip
+	│      橫向GridView顯示圖片（增強版）.rar
+	│      類似表格，可拖動，查詢資訊，也可添加資訊.rar
+	│      自己做的類似GridView 的控制項，可以拖動排序，有刪除動畫.zip
+	│      
+	├─HOME鍵
+	│      捕獲Home鍵.rar
+	│      
+	├─IOS風格
+	│      android 仿ios數位密碼.zip
+	│      SmoothSwitchLibrary仿IOS切換Activity動畫效果.rar
+	│      仿IOS的圓角設置介面。直接可用，單選多選等ATable_Demo(iOS風格設置).zip
+	│      
+	├─IPCamera
+	│      android播放IPCamera的rtsp連接.rar
+	│      
+	├─JBox2D相關
+	│      基於JBox2D的Android遊戲開發全源碼.zip
+	│      
+	├─Launcher 桌面
+	│      Android Launcher 桌面分頁滑動代碼.rar
+	│      Android Launcher 源碼修改可編譯.rar
+	│      創建桌面快捷方式源代碼.rar
+	│      安卓桌面應用EyeRoom.zip
+	│      
+	├─listview相關
+	│      android 仿path 下拉圖片放大，放開回彈 ListView.rar
+	│      android-swipelistview-支持左右滑動.rar
+	│      DragSortListView實現和QQ分組管理一樣的效果.zip
+	│      HorizontalListViewDemo 橫向滑動的ListView.zip
+	│      HorizontalListView仿微信發起群聊.zip
+	│      listview 的各種動畫效果.rar
+	│      listview 適配器 優化 重用.rar
+	│      ListView+CheckBox UI 完美版。實現 全選 、 全不選 、 刪除等功能.rar
+	│      Listview,Gridview空資料處理.zip
+	│      listview下拉刷新載入更多.zip
+	│      ListView停止滾動開啟下載圖片.zip
+	│      Listview分頁載入資料.rar
+	│      ListView多級展示，item由物件Leaf提供資料，可設置多個控制項.zip
+	│      Listview實現三級功能表列表.rar
+	│      listview實現圖片的非同步載入.rar
+	│      listview快速滑動，修改默認的滑動條.rar
+	│      ListView滾動氣泡提示.rar
+	│      listview獲取網路圖片緩存優化.zip
+	│      一個ExpandableListView的例子，實現多級功能表分類展示.rar
+	│      三種ListView下拉刷新的樣式.rar
+	│      仿QQ listView的item劃動刪除+上下拉刷新.rar
+	│      仿QQ消息列表(ListView)滑動刪除效果源碼.rar
+	│      仿UC刪除窗口列表動畫.rar
+	│      仿照新浪微博Android用戶端個人中心的ScrollView.rar
+	│      分享一個自定義列表.rar
+	│      雙列關聯listview.rar
+	│      實現列表多選的DEMO.zip
+	│      帶有拼音首字母排序的listview.rar
+	│      改編自XListView的更強大的ListView.zip
+	│      顯示在一個半圓列表項，一個不錯的魚眼效果.zip
+	│      橫向ListView的完整實現(包含基於橫向listview做的一個小相冊demo).rar
+	│      橫豎都能滑動的 listview 嵌套在一起的.zip
+	│      滑動 刪除 ListView.zip
+	│      管理圖書分類 通過listview來顯示有關圖書資源資訊.zip
+	│      自己做的手風琴效果 沒有用折疊list 每個選項中 顯示的是不同的list.rar
+	│      
+	├─NFC
+	│      MyNFCDemon.rar
+	│      
+	├─OAuth
+	│      OAuth認證以及使用網易微博開放平臺實現聊天功能.rar
+	│      基於author2.0的新浪微博.rar
+	│      
+	├─OCR圖像識別
+	│      圖像字元識別（android OCR）.zip
+	│      最全的OCR圖像識別技術源碼內有說明.zip
+	│      
+	├─P2P
+	│      Android-Sip2Peer-1.0 實現p2p.zip
+	│      
+	├─popupwindow
+	│      PopupWindow模仿UC底部Menu.rar
+	│      從下方彈出的popupwindow拍照裁剪.rar
+	│      仿微信popupwindow.zip
+	│      博客裏各個pop的源碼，包括佈局檔,popmenu,DefaultPop,和GridPop.rar
+	│      類似google+的側滑效果以及仿微信的dropdown菜單.rar
+	│      
+	├─SD卡
+	│      判斷雙SD卡_CheckDoubleSDCard.rar
+	│      
+	├─SQLite
+	│      Android 操作資料庫實例.zip
+	│      AndroidInject增加sqlite3資料庫映射注解(ORM).zip
+	│      android個人消費記錄軟體-拖控制項作品.zip
+	│      Android學習之資料存儲.rar
+	│      Android羽量級sqlite orm框架.zip
+	│      sqlite的一些基本操作，包括資料庫創建、資料庫版本升級、創建表、資料的增刪改查.zip
+	│      一個簡單的英漢詞典，點擊按鈕切換漢譯英，主要是外部資料庫的導入解析！.rar
+	│      帶密碼登陸的密碼保險箱.zip
+	│      超簡單的SQLite的使用.rar
+	│      
+	├─SQLSEVER&安卓
+	│      android 通過jdts.jar 連接SQLSEVER2008.zip
+	│      
+	├─textView
+	│      textView顯示圖片的例子_TextImage.rar
+	│      textView根據長度自動換行.rar
+	│      
+	├─UI佈局
+	│      Android_系統UI設計規則.docx
+	│      android多解析度適配 ，判斷平板還是手機，等比例縮小圖片.zip
+	│      android模仿易信UI佈局效果源碼.zip
+	│      仿安卓美團介面.rar
+	│      動態交叉佈局demo.zip
+	│      標籤式佈局吧.zip
+	│      模仿樂動力介紹頁面第一屏動畫效果.zip
+	│      高仿網易用戶端UI（tabhost）.rar
+	│      
+	├─UPnP
+	│      UPnP Android代碼實現.zip
+	│      
+	├─Widget小組件
+	│      android Widget小元件開發.zip
+	│      Android小部件AppWidget.rar
+	│      
+	├─wifi藍牙
+	│      android 4.3 版本的藍牙4.0 掃描、連接等操作。.rar
+	│      Android 開啟指定名稱和密碼的 Wifi熱點 demo .zip
+	│      android,wifi,靜態IP,設置.rar
+	│      android藍牙連接印表機.rar
+	│      Android通過藍牙與設備連接，解決資料報文分段（通過時間控制）。動態修改動畫.zip
+	│      samsung android 藍牙4.0開發工具包和BLE例子.rar
+	│      WIFIHostDemo.zip
+	│      wifi資訊掃描和rssi值檢測.rar
+	│      一個藍牙4.0BLE安卓開發的小例子,適合新手入門學習.rar
+	│      安卓藍牙對戰demo實例.rar
+	│      很基本的android 通過wifi傳輸檔的例子，帶有基本UI，類似茄子快傳的原理.rar
+	│      藍牙調試助手.zip
+	│      藍牙項目有注釋BluetoothComm.rar
+	│      
+	├─win8風格
+	│      win8介面風格扁平化設計點擊動畫效果.rar
+	│      WIN8系統 磁貼點擊下沉傾斜效果源碼.zip
+	│      
+	├─XMPP
+	│      XMPP(Android用戶端的實現+_Tomcat版的Androidpn_).rar
+	│      【仿微信即時聊天】xmpp4Android 第一期.rar
+	│      
+	├─下拉上拉刷新
+	│      Fragment動畫+上下拉刷新.zip
+	│      Google官方下拉刷新元件SwipeRefreshLayout(Google最新控制項).rar
+	│      LearnPullToRefreshControls.zip
+	│      listview上拉刷新.zip
+	│      listview上拉和下拉刷新項目包.zip
+	│      listView下拉刷新上拉刷新帶阻尼效果.rar
+	│      ListView下拉刷新上拉自動載入demo.zip
+	│      PullToRefresh下拉刷新詳細注釋版.rar
+	│      SwipeRefreshLayoutSample.zip
+	│      ViewPager中嵌套ListView實現了下拉刷新和上拉更多，解決了衝突的問題。.zip
+	│      XListview實現上拉刷新下拉載入功能.rar
+	│      下拉刷新2.zip
+	│      仿網易新聞listview加header圖片滾動，上拉下拉刷新.zip
+	│      
+	├─串口&Socket通訊USB驅動&jni
+	│      andorid串口編程.rar
+	│      android 局域網資料傳輸(基於熱點局域網).rar
+	│      Android例子源碼Socket實現粗略的聊天室功能.rar
+	│      Android應用源碼安卓與PC的Socket通信項目C#版+Java版.rar
+	│      Android應用源碼安卓與PC的Socket通信項目java版.rar
+	│      Android系統訪問串口設備源碼.rar
+	│      exarusbdriver.rar
+	│      串口開發的demo，裏面包含JNI文件.rar
+	│      串口編程資料.rar
+	│      安卓JNIdemo.zip
+	│      通過jni調用C實現高斯模糊效果，提高了實現速度.rar
+	│      
+	├─人臉識別
+	│      人臉檢測的API例子.zip
+	│      
+	├─代碼安全
+	│      Android軟體安全與逆向分析PDF+隨書源碼.rar
+	│      java 對apk 檔進行偽加密，然後進行位元組碼變換的工具，可運行的源代碼，其中的apk的目錄，需要自己修改成，你的自己的目錄。.zip
+	│      這是一個檔檔加密的安卓源代碼，此功能在很多場合都有用到，分享給大家.zip
+	│      
+	├─儀錶盤效果
+	│      android儀錶盤.zip
+	│      Circle.rar
+	│      thermometer_android儀錶盤.zip
+	│      
+	├─其他
+	│      100多個Android 實例集合.rar
+	│      9GAG網站用戶端.rar
+	│      Andriod源碼，密碼保險箱.zip
+	│      andriod鬧鐘源代碼.zip
+	│      Android 4.4.2 簡單的人品測試.zip
+	│      Android 50 Hacks 源碼.zip
+	│      Android root源碼（利用CVE-2013-6282漏洞）.zip
+	│      Android 仿美圖秀秀和IOS系統的相機膠捲.rar
+	│      Android 北京地鐵導航源碼.rar
+	│      android 後臺服務運行，保持不被幹掉。.rar
+	│      android 備忘錄 資料庫存儲到本地 定時提醒.zip
+	│      ANDROID 帶附件的後臺郵件發送,可以配置郵件的主題，郵件正文，和郵件附件，供參考.zip
+	│      android 豆瓣網用戶端.rar
+	│      Android小例子源碼大全.rar
+	│      android小插件tab標籤大合集.zip
+	│      Android經典開發---豆瓣網移動用戶端+講解+源代碼.rar
+	│      Android重力感應跑步測速應用.zip
+	│      BMI健康計算器.rar
+	│      D-山東省會大劇院開發APP源代碼。提供演出資訊展示，廣告推送，等功能。.rar
+	│      D-應用自動測試appdemozip.rar
+	│      D-用來連接owncloud雲端的安卓用戶端源碼.zip
+	│      D-馬上有短信.rar
+	│      google 官方AIPDEMO.rar
+	│      IN成都手機用戶端 android源碼（需要穀歌地圖版本測試）.rar
+	│      LookAround開源代碼，移動互聯網用戶端，使用眾多第三方庫，做用戶端開發，初步可以學習借鑒。.zip
+	│      NameCardRec.rar
+	│      ViewPager+ViewFillper+ViewFlow的使用方法.zip
+	│      人臉識別Camera_face.rar
+	│      仿快按鈕 360智鍵 米鍵.rar
+	│      健身助手Android應用代碼.zip
+	│      北京工商大學上網登陸Android版源碼.rar
+	│      千龍新聞用戶端源碼.zip
+	│      後臺保持運行，開機後自動啟動設定好的APK的DEMO.zip
+	│      在代碼中關鍵部分都有詳細的注釋：1、使用兩張圖片合成浮水印；2、將文字直接繪製到圖片上；3、獲取手機或sd卡上的圖片，壓縮並顯示；4、可將圖片保存到sd卡上；5、將圖片進行Base64轉換；6、將Base64轉換為圖片。.zip
+	│      基於MQTT的安卓消息推送php服務端源碼+安卓端源碼.rar
+	│      壽司遊戲代碼.rar
+	│      山東建築大學Android實驗3--12.zip
+	│      手機遠程監控.rar
+	│      桌面圖示，點擊進入相應的網站。（仿移動門戶10086）.zip
+	│      桌面快捷鍵消息數目提醒.zip
+	│      植物大戰僵屍源碼.7z
+	│      植物大戰僵屍源碼.rar
+	│      消滅星星 遊戲 在安卓系統測試過.rar
+	│      源代碼.rar
+	│      移動日記本功能包含傳統的日記本和音頻日記、視頻日記，實現私密日記和普通日記。.zip
+	│      網易新聞.zip
+	│      軟體管理器.rar
+	│      
+	├─切換動畫
+	│      Activity切換動畫--模糊、水波紋、折疊效果.zip
+	│      各種Activity切換效果.rar
+	│      
+	├─刮刮樂
+	│      android刮獎效果.rar
+	│      刮刮樂.rar
+	│      刮刮樂開獎.rar
+	│      
+	├─動態佈局
+	│      android動態添加表格行.rar
+	│      java代碼動態生成控制項.zip
+	│      test-顯示隱藏.zip
+	│      動態生成任意張圖片控制項.zip
+	│      根據內容自動佈局.rar
+	│      
+	├─動畫效果
+	│      activity切換特效.rar
+	│      Android Layout UI 首頁載入過渡動畫，星期變化動畫.rar
+	│      android 仿真翻頁效果.rar
+	│      Android 煙花效果源碼.zip
+	│      android-flip 類似Flipboard翻轉動畫的實現.zip
+	│      Android仿蘋果的上下翻頁效果.rar
+	│      Android使用SurfaceView實現墨蹟天氣的風車效果.zip
+	│      android抽屜效果.rar
+	│      animation的結合蝴蝶飛的動畫，使用動畫裏面的幾種類型.zip
+	│      BackgroundViewPager實現桌面launch移動.zip
+	│      ViewFlow,一個滑動效果庫.rar
+	│      樂動力的酷黑旋轉引導動畫.rar
+	│      仿淘寶購買商品，主頁後縮.rar
+	│      多個按鈕左右相互擠壓效果demo.zip
+	│      幸運大轉盤源碼.rar
+	│      搖色子效果.rar
+	│      水果忍者點擊螢幕效果.rar
+	│      翻翻樂--搶答--轉盤.rar
+	│      自定義視圖實現水波從中心擴散效果.rar
+	│      雪花飄落效果，代碼很簡單！！！！！.zip
+	│      高仿墨蹟天氣背景動畫效果-雲，風，雪等.rar
+	│      
+	├─醫療相關
+	│      Android版預約掛號部分版.rar
+	│      
+	├─後臺服務
+	│      android殺不死服務一種實現，能過保證第三方軟體和系統殺不死他，很好用哦.zip
+	│      D-安裝之後就能不斷的喚醒，實現後臺service持續運行，並且喚醒之後進入自定義介面.rar
+	│      
+	├─啟動退出&網路判斷
+	│      3G和wifi的切換監聽.zip
+	│      Activity啟動和退出動畫.zip
+	│      android 啟動頁 引導頁 到主介面，含有檢查應用更新。.rar
+	│      android仿微信退出彈出框實現.zip
+	│      android監聽網路狀態Demo.zip
+	│      ViewPager+Fragment側滑選項卡，流覽器控制項，兩次退出.rar
+	│      從註冊流程 分析如何安全退出多個Activity 多種方式.rar
+	│      判斷是否聯網.rar
+	│      快捷圖示的創建與移除.rar
+	│      網路判斷，介面啟動.zip
+	│      網路連接狀態檢測.rar
+	│      返回鍵退出程式的兩種方式.rar
+	│      閃屏加退出提示應用.zip
+	│      隱藏安裝包圖示使用其他應用啟動本應用.rar
+	│      
+	├─圖片剪裁
+	│      android圖片中部裁剪.zip
+	│      Android圖片的旋轉，縮放，剪切，存儲.rar
+	│      圖片裁剪，代碼精簡.rar
+	│      
+	├─圖片載入緩存
+	│      afinal框架實現圖片的簡單非同步緩存載入.rar
+	│      andengine中直接載入多張小圖片合成一張大圖片生成動畫精靈.rar
+	│      Android 圖片緩存、載入器.zip
+	│      Android-非同步圖片載入器.zip
+	│      Android9妹工具(9Patch).rar
+	│      android相冊系統(用Matrix實現).zip
+	│      android端用於非同步載入圖片，記憶體緩存，檔緩存，imageview顯示圖片時增加淡入淡出動畫。.zip
+	│      優化增強的緩存機制(SimpleCache).rar
+	│      載入本地圖片，絕對不會出現OOM.rar
+	│      圖片載入器.rar
+	│      圖片流覽器+緩存+viewpager.rar
+	│      安卓圖片旋轉放大縮寫透明度調整例子.rar
+	│      掃描手機中的圖片，仿微信顯示本地圖片效果.rar
+	│      演化理解 Android 非同步載入圖片.rar
+	│      自己在用的網路圖片載入代碼.zip
+	│      （Android平臺）可以根據手勢簡單縮放圖片.rar
+	│      
+	├─圖片圓角
+	│      Android創建抗鋸齒透明背景圓角圖像.zip
+	│      ImageView 自定義控制項，實現圓角控制項圖片功能.zip
+	│      圓形，圓角圖片，已經封裝好的方法，直接調用！.zip
+	│      帶自定義編輯功能的圓形頭像.rar
+	│      很多專案中用到了用戶頭像，但是系統的ImageView 是四方形的 ，自己寫了個處理的方法， 把bitmap處理成圓角的 。很方便.rar
+	│      
+	├─圖片處理
+	│      各種Android模糊毛玻璃效果的源代碼.zip
+	│      
+	├─圖片多選
+	│      最近在做關於上傳多張圖片的專案，需要選擇多張圖片，所以就做了個demo，僅供大家參考.rar
+	│      自定義本地相冊的功能，可以多選圖片用.rar
+	│      自定義相冊支援多選.rar
+	│      選擇多張照片上傳.rar
+	│      
+	├─圖片畫廊圖庫
+	│      360全景查看demo.rar
+	│      Android 圖片流覽全屏縮放.zip
+	│      android 安卓畫廊 照片轉換器.zip
+	│      android_PageFlipper.zip
+	│      Android利用Gallery和ImageSwitcher實現線上相冊圖片預覽功能（非同步載入圖片）.rar
+	│      Android實現左右滑動查看圖片效果.rar
+	│      Android高級圖片滾動控制項，3D版的圖片輪播器Demo.rar
+	│      CoversFlow.rar
+	│      drawable(圖片).zip
+	│      Gallery+ImageSwitcher+ViewFlipper實現手機查看壁紙效果.rar
+	│      Gallery3D.rar
+	│      GalleryDemo.rar
+	│      Gallery相冊流覽.zip
+	│      Grallery3D.zip
+	│      MyCoversFlow完整代碼（無圖片）.zip
+	│      MyWorkText.zip
+	│      ViewFlowTest 完美實現gallry輪訓效果！！！.rar
+	│      安卓3D相冊  帶有陰影立體流覽.rar
+	│      照片牆（不規則）.zip
+	│      畫廊試圖Gallery.rar
+	│      類似於系統圖庫的Demo.zip
+	│      通過非同步載入網路圖片並在自定義的gallery中實現輪播圖展示.rar
+	│      
+	├─圖片輪播
+	│      android 之旋轉羅盤 風車 開發 Android 隨手指旋轉圖片.rar
+	│      _支援顯示網路圖片及下載圖片至SD後再顯示_switchPicDemo.zip
+	│      仿優酷Android用戶端圖片左右滑動.rar
+	│      分享一個自己做的 Slider 庫.zip
+	│      圖片左右滑動 點擊放大.zip
+	│      圖片輪播（Viwepager）+(讀取網路圖片)+點擊圖片(WebView）展示.rar
+	│      廣告輪播圖自動迴圈滾動和點擊事件.rar
+	│      
+	├─圖表報表
+	│      Android 多種統計圖表源碼.zip
+	│      android可拖動柱狀圖.rar
+	│      Android多維報表.zip
+	│      仿隨手記的炫酷圓形圖.rar
+	│      使用ChartEngine實現折現圖表格.rar
+	│      安卓畫曲線圖代碼.rar
+	│      折線統計圖.rar
+	│      簡單用canvas實現一個圓錐漏斗，按照比例分成不同顏色顯示。用來做統計。.zip
+	│      自定義View實現折線圖.zip
+	│      自定義的柱狀圖控制項，歡迎大家下載學習，我的博客空間是httpblog.csdn.netls1110924viewmode=contents.zip
+	│      自定義表格自動刷新資料.zip
+	│      裏面有曲線圖 折線圖 雙曲線圖 直條圖 圓形圖，在achartengine 的基礎上 更改了一些顏色 .zip
+	│      
+	├─地圖&導航&定位&指南
+	│      AMap_Android_API_Demo_V2.0.4(Location_API_V1.0.2).zip
+	│      Android 4.0下指南針開發源碼,可在Nexus 4上完美運行.zip
+	│      Android GPS 開發client端代碼分享.zip
+	│      Android SDK-高德地圖API.pdf
+	│      Android 百度地圖API-定位周邊搜索POI源碼.zip
+	│      Android 百度地圖API源碼.zip
+	│      Android 百度地圖之自定義公交路線源碼.rar
+	│      android 獲取精度緯度.rar
+	│      androidGPS及WIFI基站定位座標源碼.rar
+	│      android程式的自動更新 和 基於GPS定位的軌跡存儲.zip
+	│      android獲取當前經緯度.rar
+	│      BaiduMap_AndroidSDK_v2.1.2_All.zip
+	│      BaiduMap_AndroidSDK_v2.1.2_Sample.zip
+	│      Baidu定位截圖Demo.rar
+	│      BMapRoutePlan.rar
+	│      Test_Map.zip
+	│      上傳百度地圖的基本定位操作應用.rar
+	│      兩個GPS導航定位源碼.rar
+	│      基於百度地圖實現的定位功能.rar
+	│      安卓調用百度地圖，實現定位和搜索功能.rar
+	│      指南針安卓端源碼.rar
+	│      百度地圖定位，顯示周圍的人，類似於E代駕的首頁效果.zip
+	│      百度地圖點擊標注，彈出窗口.rar
+	│      百度地圖移動獲取位置，自動定位.zip
+	│      百度快速定位locSDK_3.3_Demo.zip
+	│      監控別人的行蹤.rar
+	│      調用GoogleMap源碼，點擊事件在注釋裏面.rar
+	│      高德地圖Marker拖動圓環範圍.zip
+	│      高德地圖圖層效果.zip
+	│      高德地圖標注 路線規劃.zip
+	│      
+	├─聲波通訊&耳機
+	│      Android的熱插拔監聽源代碼，可以用來監聽耳機之類的熱插拔事件發生.rar
+	│      聲波支付例子SinVoice-master.rar
+	│      聲波通信改進版.zip
+	│      
+	├─多點觸控&手勢操作
+	│      一個最最基礎的圖形程式，圓可以拖動，兩點觸控是刪除圓，3點觸控是添加一個圓.rar
+	│      做了四個介面的滑動功能，設置了每個介面的移動動畫操作.rar
+	│      在android學習中，動作交互是軟體中重要的一部分，其中的Scroller就是提供了拖動效果的類，在網上，比如說一些Launcher實現滑屏都可以通過這個類去實現。這個就是Scroller類學習的後的實踐了，效果很棒哦。你可以去博客裏面查看如何實現以及效果圖。對應的博文位址：httpblog.csdn.netvipzjyno1articledetails24664161.rar
+	│      多點觸控控制字體大小,源碼中有詳細注釋，簡單Demo.rar
+	│      實現類似地圖標籤的拖拽縮放.rar
+	│      手勢檢測.rar
+	│      移動開發觸摸控制實現代碼.rar
+	│      通過手勢實現的縮放處理 .rar
+	│      通過手勢對圖片進行任意放大綻放旋轉.rar
+	│      
+	├─夜間模式
+	│      白天黑夜切換實例.rar
+	│      
+	├─天氣日曆&時間選擇
+	│      android 自定義日期選擇器.zip
+	│      android-times-square Android日曆部件.zip
+	│      Android日期時間倒計時（可設置提醒）.zip
+	│      Android時間日期滾動控制項（附件版）.zip
+	│      Android系統日曆日程操作.zip
+	│      datetimepicker實現挺不錯的時間選擇器，分為日期選擇器和時鐘選擇器。.zip
+	│      優秀的日期選擇DatePickerDialog（原創求頂）.zip
+	│      可拖拽View，仿墨蹟天氣城市管理.rar
+	│      攜程、去哪兒日曆源碼.rar
+	│      支持農曆的精美日曆專案源碼.zip
+	│      日曆源碼（自帶農曆 節氣 以及 節日）.zip
+	│      最全日曆.rar
+	│      模仿Iphone時間滾輪.rar
+	│      活動限時搶購倒計時案例.rar
+	│      簡易日曆中心.rar
+	│      簡潔天氣項目源碼.zip
+	│      精確計算農曆二十四節氣.zip
+	│      
+	├─字母索引
+	│      Android字母排序 類似通訊錄字母檢索.rar
+	│      IndexableListView索引導航.zip
+	│      按字母索引滑動.zip
+	│      模仿微信聯繫人的字母索引ListView,高拓展，高維護。.zip
+	│      獲取手機聯繫人並按字母排序，且可根據字母右側A~Z檢索.rar
+	│      
+	├─安裝&卸載
+	│      Android中禁止某軟體的安裝.zip
+	│      監聽自身應用卸載，並在卸載之後，使用libcurl三方庫進行一次三方請求，或者啟動網頁的實例工程。.rar
+	│      監聽自身被卸載.zip
+	│      
+	├─富文本編輯器
+	│      Android富文本編輯器源碼+服務端.rar
+	│      
+	├─對講機&答錄機
+	│      Andorid錄音+變聲+轉mp3.rar
+	│      Android電子麥克風.zip
+	│      仿微信錄音的功能.zip
+	│      仿微信的錄音功能.zip
+	│      使用MedioRecord錄音根據聲音大小圖片顯示波動.rar
+	│      對講機參考資料.rar
+	│      開心網語音發送模組的錄音功能.zip
+	│      錄音，播放和音頻格式轉換，（pcm-bin,bin-pcm,pcm-wav）.zip
+	│      手機調用自帶的麥克風進行聲音錄製，錄製的同時聲音轉換成波形不停的變動顯示在手機的螢幕上.rar
+	│      按住說話，開始錄音，停止錄音，顯示到列表，點擊列表項播放。.rar
+	│      神聊對講機源碼.rar
+	│      簡易答錄機.rar
+	│      語音壓縮，android開發語音功能較多使用的時候，壓縮大小50%.rar
+	│      
+	├─導航菜單分類
+	│      Android仿大眾點評、美團下拉菜單.zip
+	│      Android雙向滑動功能表帶按鈕版.zip
+	│      Android圓形旋轉菜單CircleMenu.rar
+	│      Android實現功能表、彈出框、Activity帶值例子.rar
+	│      android自定義控制項-側滑功能表.zip
+	│      ContextMenu 上下文選項菜單，長按後跳出菜單.zip
+	│      Fragment例子.rar
+	│      NavigationDrawer完整代碼.rar
+	│      QQ空間底部菜單.rar
+	│      slidemenu左右菜單滑動.zip
+	│      SlidingMenu 側滑菜單 簡化版.zip
+	│      SlidingMenu實現側滑欄功能表.rar
+	│      SlidingMenu左右寬度可調節菜單.rar
+	│      一個ExpandableListView的例子，實現多級功能表分類展示.rar
+	│      以圓心散開的半圓菜單.zip
+	│      仿 網易新聞用戶端 滑動導航.zip
+	│      仿google play側滑菜單.zip
+	│      仿slidingmune的app左滑菜單效果.rar
+	│      仿照360手機助手，網易新聞用戶端 實現 側滑.zip
+	│      仿米賺帶兩側slidingmenu和自動banner的一個應用.rar
+	│      仿美團彈出分類選擇框.rar
+	│      關於Frangment 的實現 仿網易.zip
+	│      原來PATH的功能表效果如此簡單。佈局+TranslateAnimation搞定.zip
+	│      完美！SlidingMenu jar包版demo！不用導包！相容2.2.zip
+	│      開源側滑效果實現.rar
+	│      新手側滑菜單例子.rar
+	│      有很多導航的例子，包括著名的SlidingMenu, 已經卡片式導航，雙列表等.rar
+	│      模仿什麼值得買的demo fragment很強大.rar
+	│      水準方向伸縮的path按鈕功能表，非弧形.rar
+	│      級聯功能表，兩級功能表自定義實現提供多種方式PopWindow，Fragment引用..rar
+	│      自動判斷位置的彈出功能表.zip
+	│      菜單動畫(類似QQ空間)Demo.zip
+	│      菜單類似QQ的設置面板的側滑菜單佈局.zip
+	│      高仿網易新聞抽屜效果+橫向功能表+頁面滑動.zip
+	│      
+	├─工具&文檔
+	│      14天學會安卓開發_(完整版).pdf
+	│      安卓偽加密工具.7z
+	│      
+	├─廣告展示
+	│      Android高仿廣告條用ViewPager實現左右完美無限滑動.zip
+	│      ViewPager使用不錯的代碼.rar
+	│      仿天貓九個宮抽獎功能------友推.rar
+	│      廣告自動滾屏播放應用.zip
+	│      用ViewPager實現手動切換，用Timer + Handler實現自動切換，左右完美無限滑動效果非常平滑.zip
+	│      
+	├─應用資訊
+	│      獲取手機應用資訊.rar
+	│      
+	├─應用更新
+	│      android 線上更新示例代碼.rar
+	│      android程式的自動更新 和 基於GPS定位的軌跡存儲.zip
+	│      app更新，實現service下載.rar
+	│      【手機安全衛士02】連接伺服器獲取更新資訊.rar
+	│      
+	├─開關效果
+	│      仿ios的SwitchButton 非圖片實現.zip
+	│      
+	├─開發框架
+	│      AndBase框架.rar
+	│      Android 極速開發框架 dhroid.zip
+	│      AndroidAppCodeFramework-master.zip
+	│      TreeCore Android應用框架.rar
+	│      
+	├─引導頁面
+	│      Activity進場 切換動畫 （仿QQ）.zip
+	│      android啟動及歡迎介面.rar
+	│      Android應用源碼高仿墨蹟天氣引導介面.rar
+	│      [安卓開源]GuideViewDemo(超炫麗用戶引導).rar
+	│      仿趕集生活android用戶端的介紹動畫介面.rar
+	│      在android 軟體第一次使用的時候，一般會在當前的介面上做一個灰色的蒙版，上面有顯示的一些提醒性質的教學文字或者圖案。我想的是當前介面上蒙上一個 Fragment 把提示資訊也放在Fragment上。博客地址httpblog.csdn.netu012565107articledetails24727251.zip
+	│      完美！ 閃屏+引導頁 功能全面！源碼詳細注釋！.rar
+	│      引導介面viewPager.zip
+	│      引導介面仿人人網.zip
+	│      引導介面仿微信.zip
+	│      歡迎引導頁面.zip
+	│      超炫麗viewpager用戶引導.zip
+	│      閃屏及第一次進入的介紹介面.rar
+	│      專案啟動的時候，彈出的懸浮帶有關閉按鈕的dialog.rar
+	│      
+	├─懸浮窗
+	│      Android 天天動聽懸浮歌詞源碼.zip
+	│      android 懸浮窗.rar
+	│      Android 視頻浮動視窗源碼.rar
+	│      android桌面懸浮窗效果進階 仿360手機衛士、淘寶手機助手.rar
+	│      仿360桌面懸浮窗效果，支援拖到指定位置刪除.zip
+	│      實現桌面懸浮窗，並可隨手指移動,代碼只實現一個button，可自行修改懸浮窗樣式.rar
+	│      懸浮窗 仿qq小火箭的實現源碼，可運行，可作為桌面動態圖的例子.rar
+	│      懸浮視窗和半透明實現效果.rar
+	│      浮動窗口播放器.rar
+	│      
+	├─截屏
+	│      D-簡單的截屏應用.rar
+	│      
+	├─抽屜效果
+	│      簡單可以滑動的抽屜效果.zip
+	│      
+	├─拍照&錄影
+	│      android 使用javacv進行錄影[模仿vine].zip
+	│      Android-拍照、打開本地相冊.zip
+	│      camera應用，修改過可以在4.0系統上運行。.zip
+	│      基於Android2.2照相機Demo,可以直接放到項目裏使用.rar
+	│      手機拍照.rar
+	│      
+	├─拍照&檔上傳&錄影&監控
+	│      android 調用系統相機圖庫裁剪-圖片上傳-客服端(測試可用).rar
+	│      android錄音上傳到伺服器，上傳使用AsyncTask非同步任務.rar
+	│      android拍攝視頻並上傳到PHP伺服器.zip
+	│      圖片拍照上傳.rar
+	│      基於android手機的遠端視頻監控系統.rar
+	│      安卓圖片上傳和檔上傳帶jsp服務端源碼.rar
+	│      實現錄音的AAC格式，並上傳到伺服器，然後下載播放.rar
+	│      實現網路攝像頭功能.zip
+	│      拍照上傳源碼.zip
+	│      拍照，完美尺寸保存SD卡.zip
+	│      自定義相機（選擇曝光度）源碼.rar
+	│      
+	├─換膚
+	│      “搖一搖”動態更換皮膚完美實現！.zip
+	│      更換軟體主題（apk方式）.rar
+	│      更換軟體主題（zip方式）.rar
+	│      
+	├─搜索相關
+	│      Android關鍵字飛入飛出的動畫，類似應用寶那樣的搜索關鍵字的動畫.zip
+	│      android搜索歷史記錄提示，在edittext輸入框中輸入，會在本地保存，下次輸入會自動提示.zip
+	│      快速選擇條件進行結果檢索的實現.rar
+	│      特效搜索框.rar
+	│      
+	├─搖一搖&重力感測器
+	│      Android加速度感測器源代碼.zip
+	│      android姿態感測器源代碼.zip
+	│      Android搖一搖功能示例源碼.zip
+	│      android搖一搖監聽，伴隨震動，注釋很強，代碼清晰，絕對可以運行。.rar
+	│      Vibrator手機震動服務 - 小小程式師 - 博客頻道 - CSDN.pdf
+	│      “搖一搖”動態更換皮膚完美實現！.zip
+	│      加速度感測器.rar
+	│      對三個方向的加速度進行測量並即時繪製圖像.rar
+	│      手機搖一搖DEMO代碼，實現搖一搖執行特定程式.zip
+	│      手機搖一搖功能+音量可根據系統音量加減鍵調節.zip
+	│      
+	├─支付例子
+	│      2.0新版技術開發包.zip
+	│      android應用內購買 google app veding billing.rar
+	│      BlogForZFB.zip
+	│      NetPayClient用戶手冊.doc
+	│      NetPayClinet2.5 for java.rar
+	│      WS_SECURE_PAY.zip
+	│      用戶端文檔及demo_Android(20130328).zip
+	│      手機類似拉卡拉音頻刷卡器分析.pdf
+	│      手機銀行支付規範.rar
+	│      支付SDK.zip
+	│      支付寶_安卓蘋果_快捷支付_文檔_代碼例子.rar
+	│      支付寶無線支付官方的例子和資料.zip
+	│      銀聯支付Demo.zip
+	│      
+	├─文件下載上傳
+	│      Android 線上下載壓縮包並解壓到指定目錄.rar
+	│      Android快速框架+多線程下載框架的技術(Android + Afinal+gson).zip
+	│      Android中斷點下載.rar
+	│      一個支持暫停下載中斷點續傳的源碼 .rar
+	│      下載網路圖片 (整合多線程、記憶體緩存、本地檔緩存~） .zip
+	│      從網路上獲取圖片.rar
+	│      仿360MyDownload.zip
+	│      圖片下載以及記憶體處理防OOM.rar
+	│      在Listview顯示多工下載效果。可以中途停止類似360手機助手.rar
+	│      多線程網路下載.rar
+	│      自己寫的應用下載自動安裝demo.zip
+	│      
+	├─文件管理
+	│      Android 檔操作 列表顯示 進入 退出 刪除 複製 粘貼 新建檔等等.rar
+	│      很實用的源碼，包含檔管理器的基本實現思路和原理，及其方式一、首先得到手機SDCard跟目錄及所有檔物件二、將這些檔目錄資訊包裝進Adapter三、將Adapter資料設置給ListView控制項顯示.zip
+	│      檔夾的創建將raw中檔放到SD卡中將assets中檔保存到SD卡中壓縮包的解壓檔的刪除功能.rar
+	│      檔流覽返回路徑.zip
+	│      檔選擇器.zip
+	│      簡單的SD卡文件管理器.rar
+	│      自己做的一個android資料庫複製到sdcard和一個簡單的角標使用，demo很簡陋.zip
+	│      
+	├─文檔操作
+	│      android 讀取展示office2007.rar
+	│      安卓讀取Excel檔獲取表格資料.zip
+	│      解析word文檔，過程詳細，易懂，代碼可直接複用.zip
+	│      
+	├─日誌分析
+	│      android java 通用代碼，關於用properties存儲列印的Log.zip
+	│      Android開發的日記列印工具類Log4jForAndroid和LogUtil.rar
+	│      日誌記錄，開源專案使用方法見說明.zip
+	│      
+	├─時間軸
+	│      Android 時間軸樣式.zip
+	│      ListView&時間軸.zip
+	│      時間軸 TimeLine.rar
+	│      
+	├─機頂盒
+	│      TV端GridView焦點移動事件處理.rar
+	│      基於安卓機頂盒上的launcher開發，這是所有應用的一部分，裏面有卸載等等其他功能。.rar
+	│      應用在機頂盒上的我的應用，類似於市場上流行的飛看盒子，小米盒子的我的應用的代碼實現.rar
+	│      機頂盒應用的demo.rar
+	│      
+	├─條碼掃描&二維碼
+	│      android 二維碼 識別基本代碼.zip
+	│      android 實現豎屏二維碼掃描.zip
+	│      android二維碼掃描，很好用的資源.rar
+	│      android二維碼的生成和解析.rar
+	│      java使用qrCode生成二維碼實例中間帶logo.zip
+	│      zxing 生成二維碼名片.zip
+	│      Zxing二維碼掃描，豎屏仿QQ掃一掃.rar
+	│      二維碼 浮水印相機.zip
+	│      二維碼.rar
+	│      二維碼掃描和生成親測可用版BarCodeDemo.rar
+	│      二維碼掃描案例.rar
+	│      二維碼掃描的實現.rar
+	│      二維碼掃描的源代碼Demo.rar
+	│      仿360掃描模組.rar
+	│      在網上找的例子,但沒有做二維碼中添加圖片和保存的,自己改了改,發給大家共用一下,直接可以用到項目中.zip
+	│      支持豎屏、平板和只有前置攝像頭的android二維碼掃描demo（修復後）.zip
+	│      詳細注釋！二維碼條碼掃描源碼，使用Zxing core2.3.rar
+	│      專案中應用到的條碼識別代碼.rar
+	│      高仿支付寶掃描.zip
+	│      
+	├─標籤雲
+	│      標籤雲（詞雲）.zip
+	│      
+	├─流覽器&WebView&JS&HTML5
+	│      Android webView和js交互的Demo.zip
+	│      Android下讀取網頁，顯示進度條.rar
+	│      Android調用JavaScript.rar
+	│      android通過js調用安卓系統功能.rar
+	│      ViewPager+Fragment側滑選項卡，流覽器控制項，兩次退出.rar
+	│      WebViewDemo.rar
+	│      webview支援html5視頻播放實例.rar
+	│      webview重載使用.rar
+	│      一個簡單基於Android平臺的網頁流覽器，實現了網頁流覽的基本功能.rar
+	│      使用html5得到手機設備資訊的.zip
+	│      流覽器的源碼 .rar
+	│      自定義WebView，自帶載入動畫.zip
+	│      
+	├─塗鴉繪圖&圖片處理&手寫
+	│      android 吸管取色功能.zip
+	│      Android截圖,圓形,Canvas.rar
+	│      android手繪操作demo和經典繪圖源碼Pretty-Painter-master.zip
+	│      Android的graphics繪製了印章圖像.zip
+	│      android的手寫功能.zip
+	│      D-一個關於Drawer繪圖的小例子，根據時間變化，圖案也會隨之發生變化，圖案自動生成.rar
+	│      DrawPanel雙緩衝實現畫板.rar
+	│      一個塗鴉還有畫矩形 圓形的小Demo.zip
+	│      仿qq實現圖文混排以及塗鴉等功能.rar
+	│      仿美圖秀秀拼圖功能使用代碼的時候，請修改2014-03big檔放到mntsdcardclothe目錄下。.zip
+	│      可以任意對本地圖片進行添加畫筆標示，有保存，刪除，調整畫筆粗細等功能.zip
+	│      橡皮擦與畫筆的demo.rar
+	│      相冊選擇、拍照、縮放、裁減》--源碼.rar
+	│      
+	├─消息推送通知欄
+	│      NotificationTest 消息推送的簡單demo.rar
+	│      實現Notification的通知欄常駐.zip
+	│      消息推送完美demo.rar
+	│      消息推送最新demo +伺服器.rar
+	│      鐳射推送用戶端demo.zip
+	│      狀態欄通知小圖示，notification通知.rar
+	│      通知欄框架（Notificaiton）的全面學習.rar
+	│      
+	├─遊戲源碼
+	│      2048源碼，安卓用戶端完美運行.rar
+	│      Android 遊戲開發入門隨書光碟的代碼.rar
+	│      android藍牙tank大戰（有錯誤）.zip
+	│      D-鬥地主.rar
+	│      中國象棋（有錯誤）.rar
+	│      安卓冒險遊戲源碼可直接運行類似于精靈快跑這種可做畢業設計.rar
+	│      安卓遊戲2048源代碼.zip
+	│      安卓飛機遊戲.rar
+	│      完美版的Android 拼圖遊戲APK和工程源碼.rar
+	│      微信打灰機源碼.rar
+	│      捕魚達人源代碼.rar
+	│      最強手指 (Typing It).zip
+	│      本遊戲中主要包括三個模組：介面模組、運動控制模組和獎勵物品模組.rar
+	│      猜拳遊戲.rar
+	│      用的libgdx引擎寫的ACE 彈幕射擊遊戲設計與開發.rar
+	│      類似冰雪奇緣一類的三消遊戲，用quick-x實現的，簡單的demo.rar
+	│      連連看.rar
+	│      
+	├─瀑布流
+	│      android平臺仿pinterest瀑布流展現方式實現.zip
+	│      Android瀑布流載入圖片效果Demo.rar
+	│      Android瀑布流照片牆實現，體驗不規則排列的美感.rar
+	│      waterfall瀑布流.zip
+	│      瀑布流PhotoWallFallsDemo.rar
+	│      
+	├─電量管理
+	│      手機電量測試.zip
+	│      
+	├─登錄註冊
+	│      Android 仿 窗簾效果 和 登錄介面拖動效果 （Scroller類的應用）.rar
+	│      android記住密碼自動登錄.zip
+	│      android記住密碼自動登錄實例.rar
+	│      tablelogin（登陸介面）.rar
+	│      一個登陸和註冊介面.rar
+	│      一個簡單註冊介面.rar
+	│      一個簡單登錄的DEMO.rar
+	│      仿QQ代碼，實現了登入註冊的聊天功能.zip
+	│      仿QQ微信登錄頁面.rar
+	│      實現登陸註冊的Login.rar
+	│      用戶註冊，登錄的簡單實現.zip
+	│      登錄介面設計.zip
+	│      自動清空edittext.rar
+	│      通過Android用戶端訪問web伺服器，實現一個登錄功能,服務端+資料庫+安卓端.rar
+	│      
+	├─省市聯動&多級聯動
+	│      android(三級聯動)全國省市縣下拉位址選擇源碼.zip
+	│      Spinner多級聯動.zip
+	│      中國地區選擇.zip
+	│      仿蘋果的滾輪-城市選擇.rar
+	│      全國省市縣下拉位址選擇源碼.zip
+	│      安卓省市聯動.rar
+	│      省市區城市選擇.zip
+	│      自己做的安卓開發關於兩個spinner聯動的實例.rar
+	│      選擇城市列表，配本地資料庫，可以直接應用到項目.zip
+	│      
+	├─短信彩信相關
+	│      android 零許可權發送短信，支援android 4.0以上版本。.rar
+	│      android模擬短信插入和接收.rar
+	│      一個短信應用源碼.rar
+	│      後臺轉發短信到指定郵件箱，有一個測試介面，是別人的程式我組合一起，部分原創.rar
+	│      安卓手機定時發送短信 ，多條短信同時發佈.zip
+	│      廣播監聽短信並獲取短信內容.rar
+	│      點對點發送彩信源碼.rar
+	│      
+	├─短信驗證
+	│      android仿淘寶，自動獲取短信驗證碼 demo.zip
+	│      
+	├─社會化分享第三方登錄
+	│      SharedSDK實現一鍵分享.rar
+	│      ShareSdk第三方分享.rar
+	│      使用ShareSDK完成一鍵分享.rar
+	│      微信分享Demo.zip
+	│      新浪微博+九宮格快捷分享.rar
+	│      第三方登錄(QQ空間+新浪微博).rar
+	│      第三方登錄（新浪，騰訊。人人網）.zip
+	│      
+	├─窗口抖動
+	│      實現抖動視窗.rar
+	│      窗口抖動（源碼）.rar
+	│      
+	├─編程知識
+	│      模擬Activity進出棧.zip
+	│      用Roboguice實現依賴注入-.zip
+	│      
+	├─網站交互&JSON&xml&Webservice
+	│      Android 解析json_dome.rar
+	│      Android與.net交互（含post提交使用的Soap）.rar
+	│      android與asp.net中的一般處理程式ashx進行交互.zip
+	│      android使用JSON進行網路資料交換(服務端、用戶端)的實現.zip
+	│      android機票查詢源碼webservice實現.rar
+	│      Android解析服務端XML.zip
+	│      Android調用Webservice.rar
+	│      利用JSON，通過Android用戶端訪問web伺服器，實現一個登錄功能.zip
+	│      基於ssl(安全套接層)的安全傳輸，信任X。509證書。.zip
+	│      用戶端與服務端的json交互的小例子.zip
+	│      比較通用的xml解析方法.rar
+	│      網上選課管理系統（手機端）.zip
+	│      獲取每週電影票房列表.rar
+	│      通過httpclient獲取到JSON資料，展示到ListView.zip
+	│      
+	├─聊天通訊
+	│      仿QQ聊天介面，可發png，gif，圖文混排.rar
+	│      仿微信聊天軟體，Socket實現.zip
+	│      安卓局域網視頻聊天.zip
+	│      百度推聊應用.zip
+	│      簡易微信用戶端和伺服器源碼.rar
+	│      
+	├─自定義控制項
+	│      androd自定義有進度的圓形進度條.zip
+	│      Android 4.0風格中文滾動輸入.zip
+	│      Android Form EditText 驗證輸入合法性的編輯框.zip
+	│      Android 自定義頭部控制項,簡單易用.rar
+	│      android-gif-drawable 支援fig顯示的view.zip
+	│      AndroidWheel Android Wheel支援城市、多種日期時間、密碼、圖片.zip
+	│      Android滑動選擇控制項WheelView，雙級聯動，有圖有真相.rar
+	│      Android自定義控制項知識 - 博客園.pdf
+	│      Crouton 豐富樣式的Toast.zip
+	│      ImageViewEx 支援Gif顯示的ImageView.zip
+	│      ProgressWheel 支援進度顯示的圓形ProgressBar.zip
+	│      UITableView ios風格控制項.zip
+	│      ViewFlipper水準滑動.rar
+	│      一個Demo搞定30個控制項.rar
+	│      不規則點擊區域 三角形點擊區域.zip
+	│      五種不同的Toast效果.rar
+	│      五種效果的Toast.rar
+	│      自動換行並且對換行後的子控制項間隙進行平均分配.rar
+	│      自定義控制項入門級demo.zip
+	│      高仿iOS ActionSheet控制項.rar
+	│      
+	├─自適應
+	│      計算自己手機的螢幕寬高，density值，px 寬高，dp 的寬高，及px 和dp互轉的科普.rar
+	│      
+	├─視圖效果
+	│      Activity實現透明的最簡潔Demo.zip
+	│      BadgeView實現在控制項上顯示小標籤.rar
+	│      MetroUI.rar
+	│      仿 [Tidy相冊] 背景模糊效果.zip
+	│      仿微信標題欄右上角PopupWindow.rar
+	│      使用代碼繪製一個電池 (非圖片).rar
+	│      各種側滑介面的實現(圓點指示_標籤指示).rar
+	│      帶暫停功能倒計時TimeCountDown盒子適用.rar
+	│      來電彈屏實例代碼，帶關閉按鈕.rar
+	│      樹形主鍵.rar
+	│      漂亮的自定義圓形進度條.zip
+	│      簡單實用的抽屜效果.zip
+	│      高仿樂動力體重設置.zip
+	│      
+	├─視圖注入庫
+	│      模仿butter knife，實現 兩個基本的功能.zip
+	│      
+	├─視頻播放&流媒體
+	│      android上實現mp4檔的高效率切割。.rar
+	│      D-XXPlayer-android音樂播放器源碼.zip
+	│      Red5+Android 直播系統的架構服務端的直播流工程.zip
+	│      SeeJoPlayer（視頻播放器）.rar
+	│      使用Vitamio打造自己的Android萬能播放器.pdf
+	│      安卓視音頻播放測試工程.zip
+	│      完整版android視頻播放器.zip
+	│      手勢實現播放器的進度和音量調節.zip
+	│      調用系統默認播放器，RTSP流媒體。.rar
+	│      
+	├─計算器
+	│      計算器的源碼.zip
+	│      
+	├─記事本備忘錄
+	│      初初級記事本程式，直接寫檔.zip
+	│      
+	├─語音識別&文本朗讀
+	│      Android平臺使用PocketSphinx做離線語音識別，小範圍語音99%識別率.zip
+	│      data.zip
+	│      PocketSphinxAndroidDemo.zip
+	│      三個android語音識別常式mystt.rar
+	│      語音合成和語音聽寫，科大訊飛，代碼有詳細注釋.rar
+	│      語音識別，根據語音，執行對應操作.rar
+	│      調用安卓自帶文本朗讀.rar
+	│      
+	├─課程表
+	│      Android課表視圖.zip
+	│      
+	├─跑馬燈
+	│      跑馬燈效果.rar
+	│      跑馬燈效果MarqueTextView textview 迴圈 跑馬燈效果.rar
+	│      
+	├─運營商
+	│      SIM卡運營商（獲取手機號碼功能暫時無法實現）.zip
+	│      獲取手機號碼&amp;amp;&amp;amp;獲取手機運營商.zip
+	│      
+	├─進度條
+	│      Android seekbar滑動按鈕源碼.rar
+	│      CircleProgress一個圓形進度條例子代碼.zip
+	│      仿知乎的橫線直線progressbar.rar
+	│      垂直SeekBar（拖動條）.zip
+	│      環形的調節條，用於工程中特殊的調值控制項，擬物控制項的製作.rar
+	│      自定義進度條效果.rar
+	│      
+	├─通訊錄&聯繫人&打電話&歸屬地
+	│      android2.3.1系統自帶聯繫人應用源碼.zip
+	│      Android導入導出txt通訊錄工具.rar
+	│      android手機號碼歸屬地查詢源碼內附SQlite資料庫，並且有查詢示例。.zip
+	│      Android手機的通訊錄聯繫人信息.zip
+	│      android手機通訊錄.rar
+	│      android打電話源碼.rar
+	│      Android簡易通訊錄程式.rar
+	│      一個漂亮的T9撥號面板.zip
+	│      仿qq通訊錄聯繫人.rar
+	│      名片夾_搜索排序.rar
+	│      根據手機號查詢通話記錄和短信記錄.rar
+	│      通訊錄+備份還原.rar
+	│      
+	├─郵件相關
+	│      Android調用穀歌STMP發送郵件 MailDemo.zip
+	│      
+	├─鎖屏&九宮格鎖屏&解鎖
+	│      android 滑動解鎖實現源代碼.zip
+	│      Android4.2原生鎖屏GlowPadView.zip
+	│      android一鍵鎖屏源代碼，android4.2工作正常.zip
+	│      Android滑動解鎖.zip
+	│      一鍵鎖屏功能源碼.zip
+	│      九宮格滑動解鎖例子.rar
+	│      安卓鎖屏和恢復出廠設置功能.rar
+	│      按下電源鍵，再次按下時，彈出自定義介面。Activity+service+receiver.zip
+	│      智能UI鎖屏.zip
+	│      
+	├─鍵盤輸入
+	│      android全屏模式下計算鍵盤的大小.rar
+	│      android解決軟鍵盤遮擋輸入框的示例代碼.zip
+	│      仿淘寶自定義鍵盤.rar
+	│      最簡單的輸入法.rar
+	│      注釋過的穀歌輸入法PinyinIME源碼.rar
+	│      自定義鍵盤.zip
+	│      
+	├─閃光燈
+	│      Android 閃光燈，手電筒使用.zip
+	│      閃光燈的簡單控制.rar
+	│      
+	├─鬧鐘
+	│      Android一個小鬧鐘例子.zip
+	│      倒計時鬧鐘，用timetasker每秒執行一次並且按照時間顯示常規減去分或秒.rar
+	│      安卓調用系統鬧鐘及獲取所有軟體資訊.zip
+	│      
+	├─音樂播放器
+	│      Android多線程中斷點續傳下載+線上播放音樂.zip
+	│      GL音樂播放器.rar
+	│      利用contentprovider掃描記憶體卡上所有的音頻檔，掃描速度一般是300首歌需要50毫秒以內.rar
+	│      基於SDL、FFmpeg的android播放器源碼.zip
+	│      簡單實用的音樂播放器.rar
+	│      簡單音樂播放器，實現了播放器基本功能，使用service後臺播放音樂，並使用非同步線程載入音樂圖片.rar
+	│      邊下載邊播music.rar
+	│      音樂播放器 (2).zip
+	│      音樂播放器.zip
+	│      音樂播放器消息通知欄切歌欄效果（Notification+BroadcastReceiver）.zip
+	│      音樂播放器源碼.rar
+	│      
+	├─音樂相關
+	│      Android 音樂頻譜分析，把時域上連續的信號(波形)強度轉換成離散的頻域信號(頻譜)。.rar
+	│      
+	├─飛行模式
+	│      Android定時進入飛行模式.zip
+	│      
+	└─驗證碼
+			Android隨機驗證碼.rar
+			android驗證碼的整個實現過程和所有的代碼，功能比較的簡單，大家可以好好參考學習一下.rar
+
+來客TV(LikeTV)
+	LikeTV.apk
+		├版號：15070401 / 2015.07.04_01
+		├MyVideoView.java
+			├繼承VideoView：播放live stream
+			├覆寫這個 onMeasure 就可以滿板了
+		├LikeAPI.java
+			├void PostMAC(String URL,String MAC)	http://manage.2012iptv.net/api2/auth2/login.html
+			├void GetSession()
+			├CloseAlertDialog(Context context)
+			├void ShowWaitAnimation(final Context context)
+			├void HideWaitAnimation()
+			├void ShowMessageDialog(Context Context1,String StrTitle,String StrMessage,String ButtonText)
+			├String Base64Encoder(String StrBuf)
+			├String Base64Decoder(String StrBuf)
+			├WriteAppLog(String StrDir,String StrMsg)
+			├CreateAppFloder(String StrDir)
+			├WriteData2File(String StrDir,String FileName,String StrMsg)
+			├ HttpPostData2Server(String uriAPI,String [] strName,String [] strTxt,int Amount)
+			├CreateAuthInfoRandom()
+			├CreateAuthInfo(String Data)
+			├Random_0_9()
+			├getHour()//"00"~"24"
+			├getMinute()//"00"~"60"
+			├getSecond()//"00"~"60"
+			├getDay()//"01"~"31"
+			├getMonth()//"01"~"12"
+			├getYear()
+			├getWeek()
+			├SplitWifiMac(String Data)
+			├getWifiMac(Context context)
+			├getIPAddress(Context context)
+			├geteth0MacAddress() 
+			├geteth1MacAddress() 
+		├CommonModule.java
+			├RandomOut()//0~9得亂數轉字串
+			├getHour()//"00"~"24"
+			├getMinute()//"00"~"60"
+			├getSecond()//"00"~"60"
+			├getDay()//"01"~"31"
+			├getMonth()//"01"~"12"
+			├getYear()
+			├getWeek()		
+			├通用訊息對話盒
+			├Android 把自己縮小/隱藏
+			├Android Send Key code 模擬鍵盤
+			├Android Send Touch 模擬點擊
+			├Android Send TouchMOVE 模擬滑動
+			├通用資料庫SQLite
+			├抓取APP本身版本資訊
+			├SharedPreferences的使用(APP暫存資料功能)[記錄/讀取 變數值從實體檔案]
+			├取當前語言/取當前國家
+			├Android 影像處理基礎
+			├傳入圖片並切出圓角，圓角轉換函式，帶入Bitmap圖片及圓角數值則回傳圓角圖，回傳Bitmap再置入ImageView
+			├抓取非Wifi的網卡MAC
+			├取得wifi資訊
+			├手機內系統訊息
+			├取得系統上安裝APK清單
+			├刪除背景程式
+			├利用TIMER掃描偵測特定USB設備
+			├等帶時動畫
+			├清除APP暫存
+			├刪除資料夾內檔案
+			├刪除資料夾
+			├寫文字檔
+			├建立APP 資料夾
+			├抓SD卡下特定目錄的完整路徑
+			├抓取資料下所有檔案清單(列表)-子資料不會抓取
+			├Http DownLoad
+			├Read JSON
+			├簡訊相關 SMS
+			├ping(確認網路)
+			├Http post Json to Server
+			├Http Post Data to Server
+			├關閉程式提示
+			├啟動外部程式
+			├GUI提示訊息
+			├紀錄存活時間
+			├畫面相關變數與函數（絕對配置gui）
+			├Timer相關變數與函數
+			├資源檔複製到sd卡
+			├Notification 狀態列顯示icon/ 喚回GUI
+			├自訂listview字型大小，透過layout
+			├timer內實做倒數計時關閉程式
+			├單純檔案拷貝（copyfile）
+			├儲存實體SharedPreferences的xml到sd卡上(SaveSharedPreferencesXML)
+		├MainActivity.java
+			├Button 標準操作
+			├在按鈕內：切換Activity+Activity傳遞參數
+			├透過AndroidManifest.xml強制豎屏（禁止螢幕旋轉）
+		├PlayerActivity.java
+			├用MyVideoView來播放live stream
+			├用m_HandlerTimer來實做等待動畫的顯示/隱藏控制
+			├用onKeyDown來實做Activity的標準結束動作
+			├透過AndroidManifest.xml強制橫屏（禁止螢幕旋轉）
+			├全螢幕設定
+			├螢幕禁止休眠的方法
+			├接收Activity傳遞參數
+		├activity_player.xml
+			├使用自訂的元件來設定GUI配置
+
+房控[HostelControl]
+	├01.(純程式版面配置不用XML、TIMER顯示時間)
+	├02.(支援遙控器、imageview focus 框線實作)
+	├01(改1).(支援遙控器、對話盒提是按下OK)
+	├01(改2).(第二頁11張圖輪播)
+	├01(改3).(專案支援RS232)
+	├01(改4).(確定可以TIMER LOOP 送RS232訊號)
+	├01(改5).(加上對應的遙控 VS R232)
+	├01(改6).(新增假的WEBCAM頁面)
+	├01(改7).(調整WEBCAM頁面XML)
+	├01(改8).(新房控UI已經全部用XML配置完成)
+		LinearLayout比例分割畫面
+		TableLayout讓元件均勻分布在Layout(TableLayout只設定有幾列，每列元件各數可不一致)
+		元件文字置中/元建置中
+	├20160912
+		jcc給的版本
+	├20160916
+		新增不用登錄驗證的Http Post功能
+		新增簡單的JSON分析程式
+
+Android 6權限規定	

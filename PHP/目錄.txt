@@ -1,0 +1,166 @@
+////////////////////////////
+PS:
+	模板之家+PHP			->前台
+	EasyUI+PHP+自己切版		->後台
+////////////////////////////
+
+000_網頁切版和開發環境
+	000_HTML_CSS切版
+	001_登錄頁面單純切版_登錄狀態紀錄[SESSION]_JSON的輸出入
+	XXX_EasyUI
+	XXX_jashliao Web System 切版+JS
+	XXX_模板之家
+	USBWebserver v8.6
+	
+001_傳送表單和處理程式在同一頁
+
+002_自建函式庫與測試
+
+003_[PHP典型模塊與項目實戰大全]_免登錄訪客留言版
+
+004_json
+	android sent json to php
+	WEB程式產生JSON
+	教學	[jsondecode.php、jsonencode.php]
+	
+005_拆解 Youtube 影片下載位置_PHP
+
+006_[PHP典型模塊與項目實戰大全]_註冊和登錄模組
+
+007_上傳檔案PHP
+
+008_Parse JSON in JavaScript
+
+009_PHP 連結MYSQL並正確顯示資料表內的中文資料(不會亂碼)
+
+010_PHP可帶DB IP(三種DB備份與還原)
+
+011_PHP分頁
+
+012_PHP建立資料表
+
+013_報表
+	00_JavaScript_Timer功能
+	01_自動列印與分頁列印_測試OK
+	02_JS網頁局部列印去除網址列
+	03_自動列印(使用CSS分頁和JavaScript實現局部列印去除網址列)_測試OK
+	04_JS圖片載入後觸發事件(可以用在確定網頁資料全部載入後執行動作)
+	
+014_Raspberry pi_lamp_php備份
+
+015_免費的網頁(HTML5)播放器
+
+016_偽造SEO和點擊率的PHP程式原型
+
+017_Joomla
+
+018_虛擬主機的檔案分享系統平台upload
+
+019_利用JS呼叫PHP實現文字版網站瀏覽紀錄抓取(自製GA)
+
+020_利用IP查詢所在地區
+
+021_PHP抓取所有http header	[發現GOOGLE 瀏覽器在做壞事時不能用]
+
+022_PHP_CURL_HTTPS
+
+023_PHP_gif2icon
+
+024_php_qrcode project
+
+025_PHP 線上圖片轉檔
+
+026_php_qrcode_read專案
+
+027_利用miniProxy偽造IP成功
+
+028_單純工控PHP_MYSQL
+
+029_Ajax呼叫php存取mysql回傳JSON顯示的基本範例
+
+030_php提供資料jquery flot繪圖
+
+031_PHP執行WINDOWS應用程式(Bat)
+
+032_php_socket_project
+
+033_PHP Web Service(restful api)
+
+034_符合CS和PHP的PHP的SOAP專案
+
+035_wget _PHP使用curl函式庫模擬網頁登錄和抓資料
+
+036_Ajax PHP Login Page with Shake Animation Effect
+
+037_PHP執行WINDOWS應用程式(Bat)
+
+038_php_socket_project
+
+039_ThinkPHP
+
+040_PHP_Timer
+
+041_php_class_learn[PHP 類別觀念教學實作]
+
+042_PHP 簡易蜘蛛(spider)
+
+043_用 PHP CODE 由 MYSQL 匯出和匯入 CSV 檔案[easy PHP CSV Export Import]
+
+044_PHP 模仿 phpmyadmin 備份和還原(PHP imitate phpmyadmin backup and restore)
+
+045_取代 phpmyadmin
+	01.SQL Buddy免安裝 而且確定可以在USBWEBSERVER上使用
+	
+899_ECShop
+
+990_wget 測試PHP post
+
+991_細說PHP--Lamp兄弟連PHP教程
+
+992_PHP開發實例大全
+
+993_PHPshell
+
+994_文字瀏覽器
+
+995_PHP程式碼加密
+
+996_PHPtoEXE
+
+997_PHP全動態購物網站設計實務(台北e大)
+
+998_免費PHP進銷存套件(Open Source POS)
+
+999_
+
+Adobe Photoshop CS3 Extended 10.0 一鍵安裝正式版(繁中)
+
+Adobe Photoshop CS3 Extended 10.0 繁體中文一鍵安裝正式版)
+
+php Invoices
+
+XXX_javascript
+	DIV彈出視窗
+	EasyUI
+	HTML5小畫家
+	javascript 貪吃蛇
+	JavaScript_Timer功能
+	jQuery Flot(繪圖 曲線圖)
+	JQuery Tetris[俄羅斯方塊]
+	jQuery 權威指南（第二版）
+	JS基本按鈕呼叫彈出視窗
+	JS萬年曆
+	JS圖片載入後觸發事件(可以用在確定網頁資料全部載入後執行動作)
+	JS網頁局部列印去除網址列
+	JS網頁圖形時鐘
+	JS選檔和利用JS自動瀏覽部落格增加點擊率
+	JS讀取Local FILE
+	Unicode和URL編解碼網頁工具
+	WEB(javascript)treeview checkbox
+	WEB調色盤
+	女 生 計 算 機
+	百家路單CSS切版+JS畫表格
+	單純JS網頁版GOOGLE_SEO
+	農曆轉換程式(文殊菩薩剃頭日)
+	動態二階選單範例網頁.htm
+	常用單位換算網頁.html

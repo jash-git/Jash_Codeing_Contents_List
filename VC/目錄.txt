@@ -140,6 +140,8 @@
 	114_純C++製作輸入密碼顯示星號功能
 	115_CodeBlocks C++ 使用 Windows API(WinExec)呼叫Windows EXE來執行(啟動後不會咬住)
 	116_使用假指令達到快速註解和啟用程式碼(#if)
+	117_C++_計算陣列長度_數值轉BYTE陣列_計算BYTE陣列 checksum
+	118_CB_UAC_test [單純C++專案 加上UAC(WINDOWS 權限) 標準範例]
 	998_數學英文詞彙
 	999_比對程式碼差異
 	XXX_BCB6開發工具
@@ -160,6 +162,7 @@
 	XXX_螢幕側錄教學視頻
 	XXX_VB6
 	XXX_youtube 專業下載工具
+	XXX_用於 embedded IOT設備在實驗室上線時如果無法透過設備螢幕取得IP時，利用掃描方式反查線上IP和MAC對應( ps 事先記錄所有設備MAC )
 002_DLL完整設計範例	{痞客邦}
 	01_DLL共享記憶體
 	02_VB結合VC作影像處理DLL
@@ -1205,7 +1208,7 @@
 138_純C下json函式庫與範例
 139_QuickLZ C(純C壓縮與解壓縮函式庫)
 140_VC中自動改變控制項位置和大小的對話方塊類
-141_VC_UAC
+141_VC_UAC(WINDOWS 權限)
 142_CutImageForSmooth(配合112_H264FilesCopy_Project的12版以後，自動在歸檔後產生截圖)
 	CutImageForSmooth01(取得影片長度、計算一半影片長度、產生截圖)
 	CutImageForSmooth02(配合IDC移機)

@@ -9,7 +9,11 @@
 004_WMI
 005_testComboxUse:使用Combox
 006_C# 剪貼簿測試
-007_C# 存取 MySQL 基本測試
+007_C# 存取 MySQL	[GitHub]
+	code
+		CS_MySQL_01	[CONSOLE]
+		CS_MySQL_02	[GUI 新修刪查]
+		CS_Start_Stop_MySQL	[USBWEB SERVER 控制]
 008_test_Draw:畫筆/畫圖
 009_C#操作xml檔入門
 010_test_ToolTip:顯示功能提示字串

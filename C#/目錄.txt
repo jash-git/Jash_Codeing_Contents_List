@@ -134,7 +134,7 @@
 104_C# outlook menu_自己修改
 105_C# 標準畫面分割元件[SplitContainer ]
 106_A C# IP Address Control
-107_C# 元件拖拉(升位圖)
+107_C# 元件拖拉(升位圖~riser  diagram)
 108_C# PDF產生器
 109_C# WebCam
 110_C#分割視窗(DOCK)
@@ -164,6 +164,7 @@
 134_C# 傳送JSON給PHP API並等待PHP長時間運算並接收運算結果
 135_C# 文字輸入方塊限制只能輸入數字，但又要支援複合鍵(Ctrl+A,Ctrl+C,Ctrl+V)
 136_C# 讀取自製語系檔(csv)，並利用ArrayList達到搜尋對應變數值+設定變數且額外計算運算時間[計算時間差]的範例程式
+990_CS_reference[SYRIS project]
 991_支援VS2010_C#變成不用.net環境工具
 992_把C#執行檔變成安裝檔(NSIS)
 993_四本大陸書目錄

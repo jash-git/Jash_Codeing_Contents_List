@@ -134,7 +134,7 @@
 	108_純C將2個16進制的字元和一個BYTE資料空間互轉
 	109_純C十進位數字和二進位字串轉換
 	110_純C下無號Byte單一Bit設定
-	111_純C下enum example(列舉 範例~定義有意義陣列值)
+	111_純C下enum example(列舉 範例~定義有意義陣列值/陣列索引值)
 	112_純C取代system("pause")的標準函數
 	113_CodeBlocks(C++)下中文輸出(setlocale+printf)範例程式
 	114_純C++製作輸入密碼顯示星號功能
@@ -142,6 +142,8 @@
 	116_使用假指令達到快速註解和啟用程式碼(#if)
 	117_C++_計算陣列長度_數值轉BYTE陣列_計算BYTE陣列 checksum
 	118_CB_UAC_test [單純C++專案 加上UAC(WINDOWS 權限) 標準範例]
+	119_純C++把N個檔案打包變成單一檔案[自製CAB檔]
+	120_兩個一維陣列交換和一維陣列反轉和氣泡排序函數
 	998_數學英文詞彙
 	999_比對程式碼差異
 	XXX_BCB6開發工具
@@ -159,6 +161,7 @@
 		Pencil Project
 		Balsamiq Mockups(可實作UI和動作模擬)
 		繪製系統架構_流程圖[Dia]~DiaPortable
+		流程圖軟體+自己繪製的範例檔
 	XXX_螢幕側錄教學視頻
 	XXX_VB6
 	XXX_youtube 專業下載工具
@@ -731,6 +734,9 @@
 	73_(純C++)善心人士重新打包WINSOCKET的類別
 	74_VC++_thread_socket[文字模式_使用API ]
 	75_Windows_CodeBlocks_socket_project
+		CB_socket_HttpPost
+		CB_socket_ShowIP
+		Windows 純 C_C++ 使用 SOCKET Server/Client
 	76_C++ Modbus TCP
 	文章(修改Proxy設定值，自動儲存網頁，利用 net use 連結網路磁碟機並將結果存到文字檔中的方法，使用WNetAddConnection2_IPC空連接測試代碼，跳出另存網頁視窗，VC使用WEB迅雷，VC使用IE功能表功能，VC控制防火牆)
 051_影像處理
@@ -764,7 +770,7 @@
 	02_透過網路攝影機_目前正在使用
 059_類別基礎觀念
 	01_const的成員函數
-	02_OperatorOverload
+	02_C++ 運算子 重載(多載)[Operator Overload]
 	03_Overload	
 	04_純虛擬函數
 	05_VirtualFunction
@@ -1253,6 +1259,10 @@
 162_純C_字串檢查CRC16
 	CB_calcrc16
 	CS_crc16_CCITT_TABLE
+163_AI系列程式碼
+	統計學C++專案
+		01_frequency_distribution_table ~次數分配表[ frequency distribution table ]
+			有四捨五入函數
 971_SQLITE_CMD
 	SQLITE.exe
 972_K-means

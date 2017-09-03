@@ -111,6 +111,15 @@ PS:
 045_取代 phpmyadmin
 	01.SQL Buddy免安裝 而且確定可以在USBWEBSERVER上使用
 	
+046_MySQL和SQLite 兩種資料庫 建立資料表匯入相關資料的SQL語法檔案(MySQL SQLite standard sql query file)	
+	
+896_SQL語法完整教學
+	1kdata網站
+
+897_JavaScript函數活用範例速查辭典（jQuery&HTML5應用）
+
+898_李炎恢jQuery+EasyUI講義代碼	
+	
 899_ECShop
 
 990_wget 測試PHP post
